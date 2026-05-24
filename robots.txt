@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://icompsoluciones-dev.github.io/mundial2026/sitemap.xml
