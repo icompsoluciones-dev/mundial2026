@@ -1,0 +1,3651 @@
+{
+  "teams": {
+    "MÉXICO": {
+      "name": "MÉXICO",
+      "mappedName": "México",
+      "rank": 15,
+      "group": "A"
+    },
+    "SUDÁFRICA": {
+      "name": "SUDÁFRICA",
+      "mappedName": "Sudáfrica",
+      "rank": 60,
+      "group": "A"
+    },
+    "COREA": {
+      "name": "COREA",
+      "mappedName": "República de Corea",
+      "rank": 25,
+      "group": "A"
+    },
+    "CHEQUIA": {
+      "name": "CHEQUIA",
+      "mappedName": "República Checa",
+      "rank": 41,
+      "group": "A"
+    },
+    "CANADÁ": {
+      "name": "CANADÁ",
+      "mappedName": "Canadá",
+      "rank": 30,
+      "group": "B"
+    },
+    "BOSNIA": {
+      "name": "BOSNIA",
+      "mappedName": "Bosnia y Herzegovina",
+      "rank": 65,
+      "group": "B"
+    },
+    "QATAR": {
+      "name": "QATAR",
+      "mappedName": "Qatar",
+      "rank": 55,
+      "group": "B"
+    },
+    "SUIZA": {
+      "name": "SUIZA",
+      "mappedName": "Suiza",
+      "rank": 19,
+      "group": "B"
+    },
+    "BRASIL": {
+      "name": "BRASIL",
+      "mappedName": "Brasil",
+      "rank": 6,
+      "group": "C"
+    },
+    "MARRUECOS": {
+      "name": "MARRUECOS",
+      "mappedName": "Marruecos",
+      "rank": 8,
+      "group": "C"
+    },
+    "HAITÍ": {
+      "name": "HAITÍ",
+      "mappedName": "Haití",
+      "rank": 83,
+      "group": "C"
+    },
+    "ESCOCIA": {
+      "name": "ESCOCIA",
+      "mappedName": "Escocia",
+      "rank": 43,
+      "group": "C"
+    },
+    "EE.UU.": {
+      "name": "EE.UU.",
+      "mappedName": "EEUU",
+      "rank": 16,
+      "group": "D"
+    },
+    "PARAGUAY": {
+      "name": "PARAGUAY",
+      "mappedName": "Paraguay",
+      "rank": 40,
+      "group": "D"
+    },
+    "AUSTRALIA": {
+      "name": "AUSTRALIA",
+      "mappedName": "Australia",
+      "rank": 27,
+      "group": "D"
+    },
+    "TURQUÍA": {
+      "name": "TURQUÍA",
+      "mappedName": "Turquía",
+      "rank": 22,
+      "group": "D"
+    },
+    "ALEMANIA": {
+      "name": "ALEMANIA",
+      "mappedName": "Alemania",
+      "rank": 10,
+      "group": "E"
+    },
+    "CURAZAO": {
+      "name": "CURAZAO",
+      "mappedName": "Curazao",
+      "rank": 82,
+      "group": "E"
+    },
+    "C. DE MARFIL": {
+      "name": "C. DE MARFIL",
+      "mappedName": "Costa de Marfil",
+      "rank": 34,
+      "group": "E"
+    },
+    "ECUADOR": {
+      "name": "ECUADOR",
+      "mappedName": "Ecuador",
+      "rank": 23,
+      "group": "E"
+    },
+    "PAÍSES BAJOS": {
+      "name": "PAÍSES BAJOS",
+      "mappedName": "Países Bajos",
+      "rank": 7,
+      "group": "F"
+    },
+    "JAPÓN": {
+      "name": "JAPÓN",
+      "mappedName": "Japón",
+      "rank": 18,
+      "group": "F"
+    },
+    "SUECIA": {
+      "name": "SUECIA",
+      "mappedName": "Suecia",
+      "rank": 38,
+      "group": "F"
+    },
+    "TÚNEZ": {
+      "name": "TÚNEZ",
+      "mappedName": "Túnez",
+      "rank": 44,
+      "group": "F"
+    },
+    "BÉLGICA": {
+      "name": "BÉLGICA",
+      "mappedName": "Bélgica",
+      "rank": 9,
+      "group": "G"
+    },
+    "EGIPTO": {
+      "name": "EGIPTO",
+      "mappedName": "Egipto",
+      "rank": 29,
+      "group": "G"
+    },
+    "IRÁN": {
+      "name": "IRÁN",
+      "mappedName": "RI de Irán",
+      "rank": 21,
+      "group": "G"
+    },
+    "N. ZELANDA": {
+      "name": "N. ZELANDA",
+      "mappedName": "Nueva Zelanda",
+      "rank": 85,
+      "group": "G"
+    },
+    "ESPAÑA": {
+      "name": "ESPAÑA",
+      "mappedName": "España",
+      "rank": 2,
+      "group": "H"
+    },
+    "CABO VERDE": {
+      "name": "CABO VERDE",
+      "mappedName": "Cabo Verde",
+      "rank": 69,
+      "group": "H"
+    },
+    "ARABIA S.": {
+      "name": "ARABIA S.",
+      "mappedName": "Arabia Saudí",
+      "rank": 61,
+      "group": "H"
+    },
+    "URUGUAY": {
+      "name": "URUGUAY",
+      "mappedName": "Uruguay",
+      "rank": 17,
+      "group": "H"
+    },
+    "FRANCIA": {
+      "name": "FRANCIA",
+      "mappedName": "Francia",
+      "rank": 1,
+      "group": "I"
+    },
+    "SENEGAL": {
+      "name": "SENEGAL",
+      "mappedName": "Senegal",
+      "rank": 14,
+      "group": "I"
+    },
+    "IRAK": {
+      "name": "IRAK",
+      "mappedName": "Irak",
+      "rank": 57,
+      "group": "I"
+    },
+    "NORUEGA": {
+      "name": "NORUEGA",
+      "mappedName": "Noruega",
+      "rank": 31,
+      "group": "I"
+    },
+    "ARGENTINA": {
+      "name": "ARGENTINA",
+      "mappedName": "Argentina",
+      "rank": 3,
+      "group": "J"
+    },
+    "ARGELIA": {
+      "name": "ARGELIA",
+      "mappedName": "Argelia",
+      "rank": 28,
+      "group": "J"
+    },
+    "AUSTRIA": {
+      "name": "AUSTRIA",
+      "mappedName": "Austria",
+      "rank": 24,
+      "group": "J"
+    },
+    "JORDANIA": {
+      "name": "JORDANIA",
+      "mappedName": "Jordania",
+      "rank": 63,
+      "group": "J"
+    },
+    "PORTUGAL": {
+      "name": "PORTUGAL",
+      "mappedName": "Portugal",
+      "rank": 5,
+      "group": "K"
+    },
+    "RD CONGO": {
+      "name": "RD CONGO",
+      "mappedName": "RD del Congo",
+      "rank": 46,
+      "group": "K"
+    },
+    "UZBEKISTÁN": {
+      "name": "UZBEKISTÁN",
+      "mappedName": "Uzbekistán",
+      "rank": 50,
+      "group": "K"
+    },
+    "COLOMBIA": {
+      "name": "COLOMBIA",
+      "mappedName": "Colombia",
+      "rank": 13,
+      "group": "K"
+    },
+    "INGLATERRA": {
+      "name": "INGLATERRA",
+      "mappedName": "Inglaterra",
+      "rank": 4,
+      "group": "L"
+    },
+    "CROACIA": {
+      "name": "CROACIA",
+      "mappedName": "Croacia",
+      "rank": 11,
+      "group": "L"
+    },
+    "GHANA": {
+      "name": "GHANA",
+      "mappedName": "Ghana",
+      "rank": 74,
+      "group": "L"
+    },
+    "PANAMÁ": {
+      "name": "PANAMÁ",
+      "mappedName": "Panamá",
+      "rank": 33,
+      "group": "L"
+    }
+  },
+  "groups": {
+    "A": [
+      {
+        "name": "MÉXICO",
+        "mappedName": "México",
+        "rank": 15,
+        "group": "A",
+        "standing": 1
+      },
+      {
+        "name": "COREA",
+        "mappedName": "República de Corea",
+        "rank": 25,
+        "group": "A",
+        "standing": 2
+      },
+      {
+        "name": "CHEQUIA",
+        "mappedName": "República Checa",
+        "rank": 41,
+        "group": "A",
+        "standing": 3
+      },
+      {
+        "name": "SUDÁFRICA",
+        "mappedName": "Sudáfrica",
+        "rank": 60,
+        "group": "A",
+        "standing": 4
+      }
+    ],
+    "B": [
+      {
+        "name": "SUIZA",
+        "mappedName": "Suiza",
+        "rank": 19,
+        "group": "B",
+        "standing": 1
+      },
+      {
+        "name": "CANADÁ",
+        "mappedName": "Canadá",
+        "rank": 30,
+        "group": "B",
+        "standing": 2
+      },
+      {
+        "name": "QATAR",
+        "mappedName": "Qatar",
+        "rank": 55,
+        "group": "B",
+        "standing": 3
+      },
+      {
+        "name": "BOSNIA",
+        "mappedName": "Bosnia y Herzegovina",
+        "rank": 65,
+        "group": "B",
+        "standing": 4
+      }
+    ],
+    "C": [
+      {
+        "name": "BRASIL",
+        "mappedName": "Brasil",
+        "rank": 6,
+        "group": "C",
+        "standing": 1
+      },
+      {
+        "name": "MARRUECOS",
+        "mappedName": "Marruecos",
+        "rank": 8,
+        "group": "C",
+        "standing": 2
+      },
+      {
+        "name": "ESCOCIA",
+        "mappedName": "Escocia",
+        "rank": 43,
+        "group": "C",
+        "standing": 3
+      },
+      {
+        "name": "HAITÍ",
+        "mappedName": "Haití",
+        "rank": 83,
+        "group": "C",
+        "standing": 4
+      }
+    ],
+    "D": [
+      {
+        "name": "EE.UU.",
+        "mappedName": "EEUU",
+        "rank": 16,
+        "group": "D",
+        "standing": 1
+      },
+      {
+        "name": "TURQUÍA",
+        "mappedName": "Turquía",
+        "rank": 22,
+        "group": "D",
+        "standing": 2
+      },
+      {
+        "name": "AUSTRALIA",
+        "mappedName": "Australia",
+        "rank": 27,
+        "group": "D",
+        "standing": 3
+      },
+      {
+        "name": "PARAGUAY",
+        "mappedName": "Paraguay",
+        "rank": 40,
+        "group": "D",
+        "standing": 4
+      }
+    ],
+    "E": [
+      {
+        "name": "ALEMANIA",
+        "mappedName": "Alemania",
+        "rank": 10,
+        "group": "E",
+        "standing": 1
+      },
+      {
+        "name": "ECUADOR",
+        "mappedName": "Ecuador",
+        "rank": 23,
+        "group": "E",
+        "standing": 2
+      },
+      {
+        "name": "C. DE MARFIL",
+        "mappedName": "Costa de Marfil",
+        "rank": 34,
+        "group": "E",
+        "standing": 3
+      },
+      {
+        "name": "CURAZAO",
+        "mappedName": "Curazao",
+        "rank": 82,
+        "group": "E",
+        "standing": 4
+      }
+    ],
+    "F": [
+      {
+        "name": "PAÍSES BAJOS",
+        "mappedName": "Países Bajos",
+        "rank": 7,
+        "group": "F",
+        "standing": 1
+      },
+      {
+        "name": "JAPÓN",
+        "mappedName": "Japón",
+        "rank": 18,
+        "group": "F",
+        "standing": 2
+      },
+      {
+        "name": "SUECIA",
+        "mappedName": "Suecia",
+        "rank": 38,
+        "group": "F",
+        "standing": 3
+      },
+      {
+        "name": "TÚNEZ",
+        "mappedName": "Túnez",
+        "rank": 44,
+        "group": "F",
+        "standing": 4
+      }
+    ],
+    "G": [
+      {
+        "name": "BÉLGICA",
+        "mappedName": "Bélgica",
+        "rank": 9,
+        "group": "G",
+        "standing": 1
+      },
+      {
+        "name": "IRÁN",
+        "mappedName": "RI de Irán",
+        "rank": 21,
+        "group": "G",
+        "standing": 2
+      },
+      {
+        "name": "EGIPTO",
+        "mappedName": "Egipto",
+        "rank": 29,
+        "group": "G",
+        "standing": 3
+      },
+      {
+        "name": "N. ZELANDA",
+        "mappedName": "Nueva Zelanda",
+        "rank": 85,
+        "group": "G",
+        "standing": 4
+      }
+    ],
+    "H": [
+      {
+        "name": "ESPAÑA",
+        "mappedName": "España",
+        "rank": 2,
+        "group": "H",
+        "standing": 1
+      },
+      {
+        "name": "URUGUAY",
+        "mappedName": "Uruguay",
+        "rank": 17,
+        "group": "H",
+        "standing": 2
+      },
+      {
+        "name": "ARABIA S.",
+        "mappedName": "Arabia Saudí",
+        "rank": 61,
+        "group": "H",
+        "standing": 3
+      },
+      {
+        "name": "CABO VERDE",
+        "mappedName": "Cabo Verde",
+        "rank": 69,
+        "group": "H",
+        "standing": 4
+      }
+    ],
+    "I": [
+      {
+        "name": "FRANCIA",
+        "mappedName": "Francia",
+        "rank": 1,
+        "group": "I",
+        "standing": 1
+      },
+      {
+        "name": "SENEGAL",
+        "mappedName": "Senegal",
+        "rank": 14,
+        "group": "I",
+        "standing": 2
+      },
+      {
+        "name": "NORUEGA",
+        "mappedName": "Noruega",
+        "rank": 31,
+        "group": "I",
+        "standing": 3
+      },
+      {
+        "name": "IRAK",
+        "mappedName": "Irak",
+        "rank": 57,
+        "group": "I",
+        "standing": 4
+      }
+    ],
+    "J": [
+      {
+        "name": "ARGENTINA",
+        "mappedName": "Argentina",
+        "rank": 3,
+        "group": "J",
+        "standing": 1
+      },
+      {
+        "name": "AUSTRIA",
+        "mappedName": "Austria",
+        "rank": 24,
+        "group": "J",
+        "standing": 2
+      },
+      {
+        "name": "ARGELIA",
+        "mappedName": "Argelia",
+        "rank": 28,
+        "group": "J",
+        "standing": 3
+      },
+      {
+        "name": "JORDANIA",
+        "mappedName": "Jordania",
+        "rank": 63,
+        "group": "J",
+        "standing": 4
+      }
+    ],
+    "K": [
+      {
+        "name": "PORTUGAL",
+        "mappedName": "Portugal",
+        "rank": 5,
+        "group": "K",
+        "standing": 1
+      },
+      {
+        "name": "COLOMBIA",
+        "mappedName": "Colombia",
+        "rank": 13,
+        "group": "K",
+        "standing": 2
+      },
+      {
+        "name": "RD CONGO",
+        "mappedName": "RD del Congo",
+        "rank": 46,
+        "group": "K",
+        "standing": 3
+      },
+      {
+        "name": "UZBEKISTÁN",
+        "mappedName": "Uzbekistán",
+        "rank": 50,
+        "group": "K",
+        "standing": 4
+      }
+    ],
+    "L": [
+      {
+        "name": "INGLATERRA",
+        "mappedName": "Inglaterra",
+        "rank": 4,
+        "group": "L",
+        "standing": 1
+      },
+      {
+        "name": "CROACIA",
+        "mappedName": "Croacia",
+        "rank": 11,
+        "group": "L",
+        "standing": 2
+      },
+      {
+        "name": "PANAMÁ",
+        "mappedName": "Panamá",
+        "rank": 33,
+        "group": "L",
+        "standing": 3
+      },
+      {
+        "name": "GHANA",
+        "mappedName": "Ghana",
+        "rank": 74,
+        "group": "L",
+        "standing": 4
+      }
+    ]
+  },
+  "thirdPlaceRankings": [
+    {
+      "group": "D",
+      "team": {
+        "name": "AUSTRALIA",
+        "mappedName": "Australia",
+        "rank": 27,
+        "group": "D",
+        "standing": 3
+      },
+      "qualified": true,
+      "overallOrder": 1
+    },
+    {
+      "group": "J",
+      "team": {
+        "name": "ARGELIA",
+        "mappedName": "Argelia",
+        "rank": 28,
+        "group": "J",
+        "standing": 3
+      },
+      "qualified": true,
+      "overallOrder": 2
+    },
+    {
+      "group": "G",
+      "team": {
+        "name": "EGIPTO",
+        "mappedName": "Egipto",
+        "rank": 29,
+        "group": "G",
+        "standing": 3
+      },
+      "qualified": true,
+      "overallOrder": 3
+    },
+    {
+      "group": "I",
+      "team": {
+        "name": "NORUEGA",
+        "mappedName": "Noruega",
+        "rank": 31,
+        "group": "I",
+        "standing": 3
+      },
+      "qualified": true,
+      "overallOrder": 4
+    },
+    {
+      "group": "L",
+      "team": {
+        "name": "PANAMÁ",
+        "mappedName": "Panamá",
+        "rank": 33,
+        "group": "L",
+        "standing": 3
+      },
+      "qualified": true,
+      "overallOrder": 5
+    },
+    {
+      "group": "E",
+      "team": {
+        "name": "C. DE MARFIL",
+        "mappedName": "Costa de Marfil",
+        "rank": 34,
+        "group": "E",
+        "standing": 3
+      },
+      "qualified": true,
+      "overallOrder": 6
+    },
+    {
+      "group": "F",
+      "team": {
+        "name": "SUECIA",
+        "mappedName": "Suecia",
+        "rank": 38,
+        "group": "F",
+        "standing": 3
+      },
+      "qualified": true,
+      "overallOrder": 7
+    },
+    {
+      "group": "A",
+      "team": {
+        "name": "CHEQUIA",
+        "mappedName": "República Checa",
+        "rank": 41,
+        "group": "A",
+        "standing": 3
+      },
+      "qualified": true,
+      "overallOrder": 8
+    },
+    {
+      "group": "C",
+      "team": {
+        "name": "ESCOCIA",
+        "mappedName": "Escocia",
+        "rank": 43,
+        "group": "C",
+        "standing": 3
+      },
+      "qualified": false,
+      "overallOrder": 9
+    },
+    {
+      "group": "K",
+      "team": {
+        "name": "RD CONGO",
+        "mappedName": "RD del Congo",
+        "rank": 46,
+        "group": "K",
+        "standing": 3
+      },
+      "qualified": false,
+      "overallOrder": 10
+    },
+    {
+      "group": "B",
+      "team": {
+        "name": "QATAR",
+        "mappedName": "Qatar",
+        "rank": 55,
+        "group": "B",
+        "standing": 3
+      },
+      "qualified": false,
+      "overallOrder": 11
+    },
+    {
+      "group": "H",
+      "team": {
+        "name": "ARABIA S.",
+        "mappedName": "Arabia Saudí",
+        "rank": 61,
+        "group": "H",
+        "standing": 3
+      },
+      "qualified": false,
+      "overallOrder": 12
+    }
+  ],
+  "roundOf32Matchups": {
+    "L1": {
+      "id": 1,
+      "label": "Llave 1",
+      "t1": {
+        "name": "ALEMANIA",
+        "mappedName": "Alemania",
+        "rank": 10,
+        "group": "E",
+        "standing": 1
+      },
+      "t2": {
+        "name": "AUSTRALIA",
+        "mappedName": "Australia",
+        "rank": 27,
+        "group": "D",
+        "standing": 3
+      },
+      "date": "29-6-2026",
+      "time": "16:30 hs",
+      "day": "LUNES"
+    },
+    "L2": {
+      "id": 2,
+      "label": "Llave 2",
+      "t1": {
+        "name": "FRANCIA",
+        "mappedName": "Francia",
+        "rank": 1,
+        "group": "I",
+        "standing": 1
+      },
+      "t2": {
+        "name": "SUECIA",
+        "mappedName": "Suecia",
+        "rank": 38,
+        "group": "F",
+        "standing": 3
+      },
+      "date": "30-6-2026",
+      "time": "17:00 hs",
+      "day": "MARTES"
+    },
+    "L3": {
+      "id": 3,
+      "label": "Llave 3",
+      "t1": {
+        "name": "COREA",
+        "mappedName": "República de Corea",
+        "rank": 25,
+        "group": "A",
+        "standing": 2
+      },
+      "t2": {
+        "name": "CANADÁ",
+        "mappedName": "Canadá",
+        "rank": 30,
+        "group": "B",
+        "standing": 2
+      },
+      "date": "28-6-2026",
+      "time": "15:00 hs",
+      "day": "DOMINGO"
+    },
+    "L4": {
+      "id": 4,
+      "label": "Llave 4",
+      "t1": {
+        "name": "PAÍSES BAJOS",
+        "mappedName": "Países Bajos",
+        "rank": 7,
+        "group": "F",
+        "standing": 1
+      },
+      "t2": {
+        "name": "MARRUECOS",
+        "mappedName": "Marruecos",
+        "rank": 8,
+        "group": "C",
+        "standing": 2
+      },
+      "date": "29-6-2026",
+      "time": "21:00 hs",
+      "day": "LUNES"
+    },
+    "L5": {
+      "id": 5,
+      "label": "Llave 5",
+      "t1": {
+        "name": "COLOMBIA",
+        "mappedName": "Colombia",
+        "rank": 13,
+        "group": "K",
+        "standing": 2
+      },
+      "t2": {
+        "name": "CROACIA",
+        "mappedName": "Croacia",
+        "rank": 11,
+        "group": "L",
+        "standing": 2
+      },
+      "date": "2-7-2026",
+      "time": "19:00 hs",
+      "day": "JUEVES"
+    },
+    "L6": {
+      "id": 6,
+      "label": "Llave 6",
+      "t1": {
+        "name": "ESPAÑA",
+        "mappedName": "España",
+        "rank": 2,
+        "group": "H",
+        "standing": 1
+      },
+      "t2": {
+        "name": "AUSTRIA",
+        "mappedName": "Austria",
+        "rank": 24,
+        "group": "J",
+        "standing": 2
+      },
+      "date": "2-7-2026",
+      "time": "15:00 hs",
+      "day": "JUEVES"
+    },
+    "L7": {
+      "id": 7,
+      "label": "Llave 7",
+      "t1": {
+        "name": "EE.UU.",
+        "mappedName": "EEUU",
+        "rank": 16,
+        "group": "D",
+        "standing": 1
+      },
+      "t2": {
+        "name": "ARGELIA",
+        "mappedName": "Argelia",
+        "rank": 28,
+        "group": "J",
+        "standing": 3
+      },
+      "date": "1-7-2026",
+      "time": "20:00 hs",
+      "day": "MIÉRCOLES"
+    },
+    "L8": {
+      "id": 8,
+      "label": "Llave 8",
+      "t1": {
+        "name": "BÉLGICA",
+        "mappedName": "Bélgica",
+        "rank": 9,
+        "group": "G",
+        "standing": 1
+      },
+      "t2": {
+        "name": "CHEQUIA",
+        "mappedName": "República Checa",
+        "rank": 41,
+        "group": "A",
+        "standing": 3
+      },
+      "date": "1-7-2026",
+      "time": "16:00 hs",
+      "day": "MIÉRCOLES"
+    },
+    "L9": {
+      "id": 9,
+      "label": "Llave 9",
+      "t1": {
+        "name": "BRASIL",
+        "mappedName": "Brasil",
+        "rank": 6,
+        "group": "C",
+        "standing": 1
+      },
+      "t2": {
+        "name": "JAPÓN",
+        "mappedName": "Japón",
+        "rank": 18,
+        "group": "F",
+        "standing": 2
+      },
+      "date": "29-6-2026",
+      "time": "13:00 hs",
+      "day": "LUNES"
+    },
+    "L10": {
+      "id": 10,
+      "label": "Llave 10",
+      "t1": {
+        "name": "ECUADOR",
+        "mappedName": "Ecuador",
+        "rank": 23,
+        "group": "E",
+        "standing": 2
+      },
+      "t2": {
+        "name": "SENEGAL",
+        "mappedName": "Senegal",
+        "rank": 14,
+        "group": "I",
+        "standing": 2
+      },
+      "date": "30-6-2026",
+      "time": "13:00 hs",
+      "day": "MARTES"
+    },
+    "L11": {
+      "id": 11,
+      "label": "Llave 11",
+      "t1": {
+        "name": "MÉXICO",
+        "mappedName": "México",
+        "rank": 15,
+        "group": "A",
+        "standing": 1
+      },
+      "t2": {
+        "name": "C. DE MARFIL",
+        "mappedName": "Costa de Marfil",
+        "rank": 34,
+        "group": "E",
+        "standing": 3
+      },
+      "date": "30-6-2026",
+      "time": "21:00 hs",
+      "day": "MARTES"
+    },
+    "L12": {
+      "id": 12,
+      "label": "Llave 12",
+      "t1": {
+        "name": "INGLATERRA",
+        "mappedName": "Inglaterra",
+        "rank": 4,
+        "group": "L",
+        "standing": 1
+      },
+      "t2": {
+        "name": "NORUEGA",
+        "mappedName": "Noruega",
+        "rank": 31,
+        "group": "I",
+        "standing": 3
+      },
+      "date": "1-7-2026",
+      "time": "12:00 hs",
+      "day": "MIÉRCOLES"
+    },
+    "L13": {
+      "id": 13,
+      "label": "Llave 13",
+      "t1": {
+        "name": "ARGENTINA",
+        "mappedName": "Argentina",
+        "rank": 3,
+        "group": "J",
+        "standing": 1
+      },
+      "t2": {
+        "name": "URUGUAY",
+        "mappedName": "Uruguay",
+        "rank": 17,
+        "group": "H",
+        "standing": 2
+      },
+      "date": "3-7-2026",
+      "time": "18:00 hs",
+      "day": "VIERNES"
+    },
+    "L14": {
+      "id": 14,
+      "label": "Llave 14",
+      "t1": {
+        "name": "TURQUÍA",
+        "mappedName": "Turquía",
+        "rank": 22,
+        "group": "D",
+        "standing": 2
+      },
+      "t2": {
+        "name": "IRÁN",
+        "mappedName": "RI de Irán",
+        "rank": 21,
+        "group": "G",
+        "standing": 2
+      },
+      "date": "3-7-2026",
+      "time": "14:00 hs",
+      "day": "VIERNES"
+    },
+    "L15": {
+      "id": 15,
+      "label": "Llave 15",
+      "t1": {
+        "name": "SUIZA",
+        "mappedName": "Suiza",
+        "rank": 19,
+        "group": "B",
+        "standing": 1
+      },
+      "t2": {
+        "name": "EGIPTO",
+        "mappedName": "Egipto",
+        "rank": 29,
+        "group": "G",
+        "standing": 3
+      },
+      "date": "2-7-2026",
+      "time": "23:00 hs",
+      "day": "JUEVES"
+    },
+    "L16": {
+      "id": 16,
+      "label": "Llave 16",
+      "t1": {
+        "name": "PORTUGAL",
+        "mappedName": "Portugal",
+        "rank": 5,
+        "group": "K",
+        "standing": 1
+      },
+      "t2": {
+        "name": "PANAMÁ",
+        "mappedName": "Panamá",
+        "rank": 33,
+        "group": "L",
+        "standing": 3
+      },
+      "date": "3-7-2026",
+      "time": "21:30 hs",
+      "day": "VIERNES"
+    }
+  },
+  "defaultSimulation": {
+    "matches": [
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 1",
+        "t1": {
+          "name": "ALEMANIA",
+          "rank": 10,
+          "group": "E"
+        },
+        "t2": {
+          "name": "AUSTRALIA",
+          "rank": 27,
+          "group": "D"
+        },
+        "winner": {
+          "name": "ALEMANIA",
+          "rank": 10,
+          "group": "E"
+        },
+        "date": "29-6-2026",
+        "time": "16:30 hs",
+        "day": "LUNES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 2",
+        "t1": {
+          "name": "FRANCIA",
+          "rank": 1,
+          "group": "I"
+        },
+        "t2": {
+          "name": "SUECIA",
+          "rank": 38,
+          "group": "F"
+        },
+        "winner": {
+          "name": "FRANCIA",
+          "rank": 1,
+          "group": "I"
+        },
+        "date": "30-6-2026",
+        "time": "17:00 hs",
+        "day": "MARTES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 3",
+        "t1": {
+          "name": "COREA",
+          "rank": 25,
+          "group": "A"
+        },
+        "t2": {
+          "name": "CANADÁ",
+          "rank": 30,
+          "group": "B"
+        },
+        "winner": {
+          "name": "COREA",
+          "rank": 25,
+          "group": "A"
+        },
+        "date": "28-6-2026",
+        "time": "15:00 hs",
+        "day": "DOMINGO"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 4",
+        "t1": {
+          "name": "PAÍSES BAJOS",
+          "rank": 7,
+          "group": "F"
+        },
+        "t2": {
+          "name": "MARRUECOS",
+          "rank": 8,
+          "group": "C"
+        },
+        "winner": {
+          "name": "PAÍSES BAJOS",
+          "rank": 7,
+          "group": "F"
+        },
+        "date": "29-6-2026",
+        "time": "21:00 hs",
+        "day": "LUNES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 5",
+        "t1": {
+          "name": "COLOMBIA",
+          "rank": 13,
+          "group": "K"
+        },
+        "t2": {
+          "name": "CROACIA",
+          "rank": 11,
+          "group": "L"
+        },
+        "winner": {
+          "name": "CROACIA",
+          "rank": 11,
+          "group": "L"
+        },
+        "date": "2-7-2026",
+        "time": "19:00 hs",
+        "day": "JUEVES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 6",
+        "t1": {
+          "name": "ESPAÑA",
+          "rank": 2,
+          "group": "H"
+        },
+        "t2": {
+          "name": "AUSTRIA",
+          "rank": 24,
+          "group": "J"
+        },
+        "winner": {
+          "name": "ESPAÑA",
+          "rank": 2,
+          "group": "H"
+        },
+        "date": "2-7-2026",
+        "time": "15:00 hs",
+        "day": "JUEVES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 7",
+        "t1": {
+          "name": "EE.UU.",
+          "rank": 16,
+          "group": "D"
+        },
+        "t2": {
+          "name": "ARGELIA",
+          "rank": 28,
+          "group": "J"
+        },
+        "winner": {
+          "name": "EE.UU.",
+          "rank": 16,
+          "group": "D"
+        },
+        "date": "1-7-2026",
+        "time": "20:00 hs",
+        "day": "MIÉRCOLES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 8",
+        "t1": {
+          "name": "BÉLGICA",
+          "rank": 9,
+          "group": "G"
+        },
+        "t2": {
+          "name": "CHEQUIA",
+          "rank": 41,
+          "group": "A"
+        },
+        "winner": {
+          "name": "BÉLGICA",
+          "rank": 9,
+          "group": "G"
+        },
+        "date": "1-7-2026",
+        "time": "16:00 hs",
+        "day": "MIÉRCOLES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 9",
+        "t1": {
+          "name": "BRASIL",
+          "rank": 6,
+          "group": "C"
+        },
+        "t2": {
+          "name": "JAPÓN",
+          "rank": 18,
+          "group": "F"
+        },
+        "winner": {
+          "name": "BRASIL",
+          "rank": 6,
+          "group": "C"
+        },
+        "date": "29-6-2026",
+        "time": "13:00 hs",
+        "day": "LUNES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 10",
+        "t1": {
+          "name": "ECUADOR",
+          "rank": 23,
+          "group": "E"
+        },
+        "t2": {
+          "name": "SENEGAL",
+          "rank": 14,
+          "group": "I"
+        },
+        "winner": {
+          "name": "SENEGAL",
+          "rank": 14,
+          "group": "I"
+        },
+        "date": "30-6-2026",
+        "time": "13:00 hs",
+        "day": "MARTES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 11",
+        "t1": {
+          "name": "MÉXICO",
+          "rank": 15,
+          "group": "A"
+        },
+        "t2": {
+          "name": "C. DE MARFIL",
+          "rank": 34,
+          "group": "E"
+        },
+        "winner": {
+          "name": "MÉXICO",
+          "rank": 15,
+          "group": "A"
+        },
+        "date": "30-6-2026",
+        "time": "21:00 hs",
+        "day": "MARTES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 12",
+        "t1": {
+          "name": "INGLATERRA",
+          "rank": 4,
+          "group": "L"
+        },
+        "t2": {
+          "name": "NORUEGA",
+          "rank": 31,
+          "group": "I"
+        },
+        "winner": {
+          "name": "INGLATERRA",
+          "rank": 4,
+          "group": "L"
+        },
+        "date": "1-7-2026",
+        "time": "12:00 hs",
+        "day": "MIÉRCOLES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 13",
+        "t1": {
+          "name": "ARGENTINA",
+          "rank": 3,
+          "group": "J"
+        },
+        "t2": {
+          "name": "URUGUAY",
+          "rank": 17,
+          "group": "H"
+        },
+        "winner": {
+          "name": "ARGENTINA",
+          "rank": 3,
+          "group": "J"
+        },
+        "date": "3-7-2026",
+        "time": "18:00 hs",
+        "day": "VIERNES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 14",
+        "t1": {
+          "name": "TURQUÍA",
+          "rank": 22,
+          "group": "D"
+        },
+        "t2": {
+          "name": "IRÁN",
+          "rank": 21,
+          "group": "G"
+        },
+        "winner": {
+          "name": "IRÁN",
+          "rank": 21,
+          "group": "G"
+        },
+        "date": "3-7-2026",
+        "time": "14:00 hs",
+        "day": "VIERNES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 15",
+        "t1": {
+          "name": "SUIZA",
+          "rank": 19,
+          "group": "B"
+        },
+        "t2": {
+          "name": "EGIPTO",
+          "rank": 29,
+          "group": "G"
+        },
+        "winner": {
+          "name": "SUIZA",
+          "rank": 19,
+          "group": "B"
+        },
+        "date": "2-7-2026",
+        "time": "23:00 hs",
+        "day": "JUEVES"
+      },
+      {
+        "round": "Dieciseisavos de Final",
+        "matchLabel": "Llave 16",
+        "t1": {
+          "name": "PORTUGAL",
+          "rank": 5,
+          "group": "K"
+        },
+        "t2": {
+          "name": "PANAMÁ",
+          "rank": 33,
+          "group": "L"
+        },
+        "winner": {
+          "name": "PORTUGAL",
+          "rank": 5,
+          "group": "K"
+        },
+        "date": "3-7-2026",
+        "time": "21:30 hs",
+        "day": "VIERNES"
+      },
+      {
+        "round": "Octavos de Final",
+        "matchLabel": "Octavos Llave 1",
+        "t1": {
+          "name": "FRANCIA",
+          "rank": 1,
+          "group": "I"
+        },
+        "t2": {
+          "name": "CROACIA",
+          "rank": 11,
+          "group": "L"
+        },
+        "winner": {
+          "name": "FRANCIA",
+          "rank": 1,
+          "group": "I"
+        },
+        "date": "4-7-2026",
+        "time": "17:00 hs",
+        "day": "SÁBADO"
+      },
+      {
+        "round": "Octavos de Final",
+        "matchLabel": "Octavos Llave 2",
+        "t1": {
+          "name": "ALEMANIA",
+          "rank": 10,
+          "group": "E"
+        },
+        "t2": {
+          "name": "COREA",
+          "rank": 25,
+          "group": "A"
+        },
+        "winner": {
+          "name": "ALEMANIA",
+          "rank": 10,
+          "group": "E"
+        },
+        "date": "4-7-2026",
+        "time": "13:00 hs",
+        "day": "SÁBADO"
+      },
+      {
+        "round": "Octavos de Final",
+        "matchLabel": "Octavos Llave 3",
+        "t1": {
+          "name": "MÉXICO",
+          "rank": 15,
+          "group": "A"
+        },
+        "t2": {
+          "name": "INGLATERRA",
+          "rank": 4,
+          "group": "L"
+        },
+        "winner": {
+          "name": "INGLATERRA",
+          "rank": 4,
+          "group": "L"
+        },
+        "date": "6-7-2026",
+        "time": "15:00 hs",
+        "day": "LUNES"
+      },
+      {
+        "round": "Octavos de Final",
+        "matchLabel": "Octavos Llave 4",
+        "t1": {
+          "name": "BRASIL",
+          "rank": 6,
+          "group": "C"
+        },
+        "t2": {
+          "name": "SENEGAL",
+          "rank": 14,
+          "group": "I"
+        },
+        "winner": {
+          "name": "BRASIL",
+          "rank": 6,
+          "group": "C"
+        },
+        "date": "6-7-2026",
+        "time": "20:00 hs",
+        "day": "LUNES"
+      },
+      {
+        "round": "Octavos de Final",
+        "matchLabel": "Octavos Llave 5",
+        "t1": {
+          "name": "PAÍSES BAJOS",
+          "rank": 7,
+          "group": "F"
+        },
+        "t2": {
+          "name": "ESPAÑA",
+          "rank": 2,
+          "group": "H"
+        },
+        "winner": {
+          "name": "ESPAÑA",
+          "rank": 2,
+          "group": "H"
+        },
+        "date": "5-7-2026",
+        "time": "16:00 hs",
+        "day": "DOMINGO"
+      },
+      {
+        "round": "Octavos de Final",
+        "matchLabel": "Octavos Llave 6",
+        "t1": {
+          "name": "EE.UU.",
+          "rank": 16,
+          "group": "D"
+        },
+        "t2": {
+          "name": "BÉLGICA",
+          "rank": 9,
+          "group": "G"
+        },
+        "winner": {
+          "name": "BÉLGICA",
+          "rank": 9,
+          "group": "G"
+        },
+        "date": "5-7-2026",
+        "time": "20:00 hs",
+        "day": "DOMINGO"
+      },
+      {
+        "round": "Octavos de Final",
+        "matchLabel": "Octavos Llave 7",
+        "t1": {
+          "name": "IRÁN",
+          "rank": 21,
+          "group": "G"
+        },
+        "t2": {
+          "name": "PORTUGAL",
+          "rank": 5,
+          "group": "K"
+        },
+        "winner": {
+          "name": "PORTUGAL",
+          "rank": 5,
+          "group": "K"
+        },
+        "date": "7-7-2026",
+        "time": "12:00 hs",
+        "day": "MARTES"
+      },
+      {
+        "round": "Octavos de Final",
+        "matchLabel": "Octavos Llave 8",
+        "t1": {
+          "name": "ARGENTINA",
+          "rank": 3,
+          "group": "J"
+        },
+        "t2": {
+          "name": "SUIZA",
+          "rank": 19,
+          "group": "B"
+        },
+        "winner": {
+          "name": "ARGENTINA",
+          "rank": 3,
+          "group": "J"
+        },
+        "date": "7-7-2026",
+        "time": "16:00 hs",
+        "day": "MARTES"
+      },
+      {
+        "round": "Cuartos de Final",
+        "matchLabel": "Cuartos Llave 1",
+        "t1": {
+          "name": "FRANCIA",
+          "rank": 1,
+          "group": "I"
+        },
+        "t2": {
+          "name": "ALEMANIA",
+          "rank": 10,
+          "group": "E"
+        },
+        "winner": {
+          "name": "FRANCIA",
+          "rank": 1,
+          "group": "I"
+        },
+        "date": "9-7-2026",
+        "time": "16:00 hs",
+        "day": "JUEVES"
+      },
+      {
+        "round": "Cuartos de Final",
+        "matchLabel": "Cuartos Llave 2",
+        "t1": {
+          "name": "ESPAÑA",
+          "rank": 2,
+          "group": "H"
+        },
+        "t2": {
+          "name": "BÉLGICA",
+          "rank": 9,
+          "group": "G"
+        },
+        "winner": {
+          "name": "ESPAÑA",
+          "rank": 2,
+          "group": "H"
+        },
+        "date": "10-7-2026",
+        "time": "15:00 hs",
+        "day": "VIERNES"
+      },
+      {
+        "round": "Cuartos de Final",
+        "matchLabel": "Cuartos Llave 3",
+        "t1": {
+          "name": "INGLATERRA",
+          "rank": 4,
+          "group": "L"
+        },
+        "t2": {
+          "name": "BRASIL",
+          "rank": 6,
+          "group": "C"
+        },
+        "winner": {
+          "name": "INGLATERRA",
+          "rank": 4,
+          "group": "L"
+        },
+        "date": "11-7-2026",
+        "time": "17:00 hs",
+        "day": "SÁBADO"
+      },
+      {
+        "round": "Cuartos de Final",
+        "matchLabel": "Cuartos Llave 4",
+        "t1": {
+          "name": "PORTUGAL",
+          "rank": 5,
+          "group": "K"
+        },
+        "t2": {
+          "name": "ARGENTINA",
+          "rank": 3,
+          "group": "J"
+        },
+        "winner": {
+          "name": "ARGENTINA",
+          "rank": 3,
+          "group": "J"
+        },
+        "date": "11-7-2026",
+        "time": "21:00 hs",
+        "day": "SÁBADO"
+      },
+      {
+        "round": "Semifinal",
+        "matchLabel": "Semifinal Llave 1",
+        "t1": {
+          "name": "FRANCIA",
+          "rank": 1,
+          "group": "I"
+        },
+        "t2": {
+          "name": "ESPAÑA",
+          "rank": 2,
+          "group": "H"
+        },
+        "winner": {
+          "name": "FRANCIA",
+          "rank": 1,
+          "group": "I"
+        },
+        "date": "14-7-2026",
+        "time": "15:00 hs",
+        "day": "MARTES"
+      },
+      {
+        "round": "Semifinal",
+        "matchLabel": "Semifinal Llave 2",
+        "t1": {
+          "name": "INGLATERRA",
+          "rank": 4,
+          "group": "L"
+        },
+        "t2": {
+          "name": "ARGENTINA",
+          "rank": 3,
+          "group": "J"
+        },
+        "winner": {
+          "name": "ARGENTINA",
+          "rank": 3,
+          "group": "J"
+        },
+        "date": "15-7-2026",
+        "time": "15:00 hs",
+        "day": "MIÉRCOLES"
+      },
+      {
+        "round": "Final",
+        "matchLabel": "Final",
+        "t1": {
+          "name": "FRANCIA",
+          "rank": 1,
+          "group": "I"
+        },
+        "t2": {
+          "name": "ARGENTINA",
+          "rank": 3,
+          "group": "J"
+        },
+        "winner": {
+          "name": "FRANCIA",
+          "rank": 1,
+          "group": "I"
+        },
+        "date": "19-7-2026",
+        "time": "15:00 hs",
+        "day": "DOMINGO"
+      }
+    ],
+    "champion": "FRANCIA"
+  },
+  "pathsForTeams": {
+    "MÉXICO": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 11",
+          "opponent": "C. DE MARFIL",
+          "opponentRank": 34,
+          "opponentGroup": "E",
+          "date": "30-6-2026",
+          "time": "21:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 3",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "6-7-2026",
+          "time": "15:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 3",
+          "opponent": "BRASIL",
+          "opponentRank": 6,
+          "opponentGroup": "C",
+          "date": "11-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "MÉXICO"
+    },
+    "SUDÁFRICA": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "COREA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 3",
+          "opponent": "CANADÁ",
+          "opponentRank": 30,
+          "opponentGroup": "B",
+          "date": "28-6-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 2",
+          "opponent": "ALEMANIA",
+          "opponentRank": 10,
+          "opponentGroup": "E",
+          "date": "4-7-2026",
+          "time": "13:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "9-7-2026",
+          "time": "16:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "COREA"
+    },
+    "CHEQUIA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 8",
+          "opponent": "BÉLGICA",
+          "opponentRank": 9,
+          "opponentGroup": "G",
+          "date": "1-7-2026",
+          "time": "16:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 6",
+          "opponent": "EE.UU.",
+          "opponentRank": 16,
+          "opponentGroup": "D",
+          "date": "5-7-2026",
+          "time": "20:00 hs",
+          "day": "DOMINGO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 2",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "10-7-2026",
+          "time": "15:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "CHEQUIA"
+    },
+    "CANADÁ": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 3",
+          "opponent": "COREA",
+          "opponentRank": 25,
+          "opponentGroup": "A",
+          "date": "28-6-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 2",
+          "opponent": "ALEMANIA",
+          "opponentRank": 10,
+          "opponentGroup": "E",
+          "date": "4-7-2026",
+          "time": "13:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "9-7-2026",
+          "time": "16:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "CANADÁ"
+    },
+    "BOSNIA": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "QATAR": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "SUIZA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 15",
+          "opponent": "EGIPTO",
+          "opponentRank": 29,
+          "opponentGroup": "G",
+          "date": "2-7-2026",
+          "time": "23:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 8",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "7-7-2026",
+          "time": "16:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 4",
+          "opponent": "PORTUGAL",
+          "opponentRank": 5,
+          "opponentGroup": "K",
+          "date": "11-7-2026",
+          "time": "21:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "SUIZA"
+    },
+    "BRASIL": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 9",
+          "opponent": "JAPÓN",
+          "opponentRank": 18,
+          "opponentGroup": "F",
+          "date": "29-6-2026",
+          "time": "13:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 4",
+          "opponent": "SENEGAL",
+          "opponentRank": 14,
+          "opponentGroup": "I",
+          "date": "6-7-2026",
+          "time": "20:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 3",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "11-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "BRASIL"
+    },
+    "MARRUECOS": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 4",
+          "opponent": "PAÍSES BAJOS",
+          "opponentRank": 7,
+          "opponentGroup": "F",
+          "date": "29-6-2026",
+          "time": "21:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 5",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "5-7-2026",
+          "time": "16:00 hs",
+          "day": "DOMINGO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 2",
+          "opponent": "BÉLGICA",
+          "opponentRank": 9,
+          "opponentGroup": "G",
+          "date": "10-7-2026",
+          "time": "15:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "MARRUECOS"
+    },
+    "HAITÍ": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "ESCOCIA": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "EE.UU.": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 7",
+          "opponent": "ARGELIA",
+          "opponentRank": 28,
+          "opponentGroup": "J",
+          "date": "1-7-2026",
+          "time": "20:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 6",
+          "opponent": "BÉLGICA",
+          "opponentRank": 9,
+          "opponentGroup": "G",
+          "date": "5-7-2026",
+          "time": "20:00 hs",
+          "day": "DOMINGO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 2",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "10-7-2026",
+          "time": "15:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "EE.UU."
+    },
+    "PARAGUAY": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "AUSTRALIA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 1",
+          "opponent": "ALEMANIA",
+          "opponentRank": 10,
+          "opponentGroup": "E",
+          "date": "29-6-2026",
+          "time": "16:30 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 2",
+          "opponent": "COREA",
+          "opponentRank": 25,
+          "opponentGroup": "A",
+          "date": "4-7-2026",
+          "time": "13:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "9-7-2026",
+          "time": "16:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "AUSTRALIA"
+    },
+    "TURQUÍA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 14",
+          "opponent": "IRÁN",
+          "opponentRank": 21,
+          "opponentGroup": "G",
+          "date": "3-7-2026",
+          "time": "14:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 7",
+          "opponent": "PORTUGAL",
+          "opponentRank": 5,
+          "opponentGroup": "K",
+          "date": "7-7-2026",
+          "time": "12:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 4",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "11-7-2026",
+          "time": "21:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "TURQUÍA"
+    },
+    "ALEMANIA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 1",
+          "opponent": "AUSTRALIA",
+          "opponentRank": 27,
+          "opponentGroup": "D",
+          "date": "29-6-2026",
+          "time": "16:30 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 2",
+          "opponent": "COREA",
+          "opponentRank": 25,
+          "opponentGroup": "A",
+          "date": "4-7-2026",
+          "time": "13:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "9-7-2026",
+          "time": "16:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "ALEMANIA"
+    },
+    "CURAZAO": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "C. DE MARFIL": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 11",
+          "opponent": "MÉXICO",
+          "opponentRank": 15,
+          "opponentGroup": "A",
+          "date": "30-6-2026",
+          "time": "21:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 3",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "6-7-2026",
+          "time": "15:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 3",
+          "opponent": "BRASIL",
+          "opponentRank": 6,
+          "opponentGroup": "C",
+          "date": "11-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "C. DE MARFIL"
+    },
+    "ECUADOR": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 10",
+          "opponent": "SENEGAL",
+          "opponentRank": 14,
+          "opponentGroup": "I",
+          "date": "30-6-2026",
+          "time": "13:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 4",
+          "opponent": "BRASIL",
+          "opponentRank": 6,
+          "opponentGroup": "C",
+          "date": "6-7-2026",
+          "time": "20:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 3",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "11-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "ECUADOR"
+    },
+    "PAÍSES BAJOS": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 4",
+          "opponent": "MARRUECOS",
+          "opponentRank": 8,
+          "opponentGroup": "C",
+          "date": "29-6-2026",
+          "time": "21:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 5",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "5-7-2026",
+          "time": "16:00 hs",
+          "day": "DOMINGO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 2",
+          "opponent": "BÉLGICA",
+          "opponentRank": 9,
+          "opponentGroup": "G",
+          "date": "10-7-2026",
+          "time": "15:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "PAÍSES BAJOS"
+    },
+    "JAPÓN": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 9",
+          "opponent": "BRASIL",
+          "opponentRank": 6,
+          "opponentGroup": "C",
+          "date": "29-6-2026",
+          "time": "13:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 4",
+          "opponent": "SENEGAL",
+          "opponentRank": 14,
+          "opponentGroup": "I",
+          "date": "6-7-2026",
+          "time": "20:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 3",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "11-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "JAPÓN"
+    },
+    "SUECIA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 2",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "30-6-2026",
+          "time": "17:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 1",
+          "opponent": "CROACIA",
+          "opponentRank": 11,
+          "opponentGroup": "L",
+          "date": "4-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 1",
+          "opponent": "ALEMANIA",
+          "opponentRank": 10,
+          "opponentGroup": "E",
+          "date": "9-7-2026",
+          "time": "16:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "SUECIA"
+    },
+    "TÚNEZ": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "BÉLGICA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 8",
+          "opponent": "CHEQUIA",
+          "opponentRank": 41,
+          "opponentGroup": "A",
+          "date": "1-7-2026",
+          "time": "16:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 6",
+          "opponent": "EE.UU.",
+          "opponentRank": 16,
+          "opponentGroup": "D",
+          "date": "5-7-2026",
+          "time": "20:00 hs",
+          "day": "DOMINGO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 2",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "10-7-2026",
+          "time": "15:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "BÉLGICA"
+    },
+    "EGIPTO": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 15",
+          "opponent": "SUIZA",
+          "opponentRank": 19,
+          "opponentGroup": "B",
+          "date": "2-7-2026",
+          "time": "23:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 8",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "7-7-2026",
+          "time": "16:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 4",
+          "opponent": "PORTUGAL",
+          "opponentRank": 5,
+          "opponentGroup": "K",
+          "date": "11-7-2026",
+          "time": "21:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "EGIPTO"
+    },
+    "IRÁN": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 14",
+          "opponent": "TURQUÍA",
+          "opponentRank": 22,
+          "opponentGroup": "D",
+          "date": "3-7-2026",
+          "time": "14:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 7",
+          "opponent": "PORTUGAL",
+          "opponentRank": 5,
+          "opponentGroup": "K",
+          "date": "7-7-2026",
+          "time": "12:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 4",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "11-7-2026",
+          "time": "21:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "IRÁN"
+    },
+    "N. ZELANDA": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "ESPAÑA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 6",
+          "opponent": "AUSTRIA",
+          "opponentRank": 24,
+          "opponentGroup": "J",
+          "date": "2-7-2026",
+          "time": "15:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 5",
+          "opponent": "PAÍSES BAJOS",
+          "opponentRank": 7,
+          "opponentGroup": "F",
+          "date": "5-7-2026",
+          "time": "16:00 hs",
+          "day": "DOMINGO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 2",
+          "opponent": "BÉLGICA",
+          "opponentRank": 9,
+          "opponentGroup": "G",
+          "date": "10-7-2026",
+          "time": "15:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "ESPAÑA"
+    },
+    "CABO VERDE": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "ARABIA S.": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "URUGUAY": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 13",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "3-7-2026",
+          "time": "18:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 8",
+          "opponent": "SUIZA",
+          "opponentRank": 19,
+          "opponentGroup": "B",
+          "date": "7-7-2026",
+          "time": "16:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 4",
+          "opponent": "PORTUGAL",
+          "opponentRank": 5,
+          "opponentGroup": "K",
+          "date": "11-7-2026",
+          "time": "21:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "URUGUAY"
+    },
+    "FRANCIA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 2",
+          "opponent": "SUECIA",
+          "opponentRank": 38,
+          "opponentGroup": "F",
+          "date": "30-6-2026",
+          "time": "17:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 1",
+          "opponent": "CROACIA",
+          "opponentRank": 11,
+          "opponentGroup": "L",
+          "date": "4-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 1",
+          "opponent": "ALEMANIA",
+          "opponentRank": 10,
+          "opponentGroup": "E",
+          "date": "9-7-2026",
+          "time": "16:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "FRANCIA"
+    },
+    "SENEGAL": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 10",
+          "opponent": "ECUADOR",
+          "opponentRank": 23,
+          "opponentGroup": "E",
+          "date": "30-6-2026",
+          "time": "13:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 4",
+          "opponent": "BRASIL",
+          "opponentRank": 6,
+          "opponentGroup": "C",
+          "date": "6-7-2026",
+          "time": "20:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 3",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "11-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "SENEGAL"
+    },
+    "IRAK": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "NORUEGA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 12",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "1-7-2026",
+          "time": "12:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 3",
+          "opponent": "MÉXICO",
+          "opponentRank": 15,
+          "opponentGroup": "A",
+          "date": "6-7-2026",
+          "time": "15:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 3",
+          "opponent": "BRASIL",
+          "opponentRank": 6,
+          "opponentGroup": "C",
+          "date": "11-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "NORUEGA"
+    },
+    "ARGENTINA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 13",
+          "opponent": "URUGUAY",
+          "opponentRank": 17,
+          "opponentGroup": "H",
+          "date": "3-7-2026",
+          "time": "18:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 8",
+          "opponent": "SUIZA",
+          "opponentRank": 19,
+          "opponentGroup": "B",
+          "date": "7-7-2026",
+          "time": "16:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 4",
+          "opponent": "PORTUGAL",
+          "opponentRank": 5,
+          "opponentGroup": "K",
+          "date": "11-7-2026",
+          "time": "21:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "ARGENTINA"
+    },
+    "ARGELIA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 7",
+          "opponent": "EE.UU.",
+          "opponentRank": 16,
+          "opponentGroup": "D",
+          "date": "1-7-2026",
+          "time": "20:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 6",
+          "opponent": "BÉLGICA",
+          "opponentRank": 9,
+          "opponentGroup": "G",
+          "date": "5-7-2026",
+          "time": "20:00 hs",
+          "day": "DOMINGO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 2",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "10-7-2026",
+          "time": "15:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "ARGELIA"
+    },
+    "AUSTRIA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 6",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "2-7-2026",
+          "time": "15:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 5",
+          "opponent": "PAÍSES BAJOS",
+          "opponentRank": 7,
+          "opponentGroup": "F",
+          "date": "5-7-2026",
+          "time": "16:00 hs",
+          "day": "DOMINGO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 2",
+          "opponent": "BÉLGICA",
+          "opponentRank": 9,
+          "opponentGroup": "G",
+          "date": "10-7-2026",
+          "time": "15:00 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "AUSTRIA"
+    },
+    "JORDANIA": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "PORTUGAL": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 16",
+          "opponent": "PANAMÁ",
+          "opponentRank": 33,
+          "opponentGroup": "L",
+          "date": "3-7-2026",
+          "time": "21:30 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 7",
+          "opponent": "IRÁN",
+          "opponentRank": 21,
+          "opponentGroup": "G",
+          "date": "7-7-2026",
+          "time": "12:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 4",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "11-7-2026",
+          "time": "21:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "PORTUGAL"
+    },
+    "RD CONGO": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "UZBEKISTÁN": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "COLOMBIA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 5",
+          "opponent": "CROACIA",
+          "opponentRank": 11,
+          "opponentGroup": "L",
+          "date": "2-7-2026",
+          "time": "19:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "4-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 1",
+          "opponent": "ALEMANIA",
+          "opponentRank": 10,
+          "opponentGroup": "E",
+          "date": "9-7-2026",
+          "time": "16:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "COLOMBIA"
+    },
+    "INGLATERRA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 12",
+          "opponent": "NORUEGA",
+          "opponentRank": 31,
+          "opponentGroup": "I",
+          "date": "1-7-2026",
+          "time": "12:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 3",
+          "opponent": "MÉXICO",
+          "opponentRank": 15,
+          "opponentGroup": "A",
+          "date": "6-7-2026",
+          "time": "15:00 hs",
+          "day": "LUNES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 3",
+          "opponent": "BRASIL",
+          "opponentRank": 6,
+          "opponentGroup": "C",
+          "date": "11-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "INGLATERRA"
+    },
+    "CROACIA": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 5",
+          "opponent": "COLOMBIA",
+          "opponentRank": 13,
+          "opponentGroup": "K",
+          "date": "2-7-2026",
+          "time": "19:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 1",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "4-7-2026",
+          "time": "17:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 1",
+          "opponent": "ALEMANIA",
+          "opponentRank": 10,
+          "opponentGroup": "E",
+          "date": "9-7-2026",
+          "time": "16:00 hs",
+          "day": "JUEVES"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 1",
+          "opponent": "ESPAÑA",
+          "opponentRank": 2,
+          "opponentGroup": "H",
+          "date": "14-7-2026",
+          "time": "15:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "CROACIA"
+    },
+    "GHANA": {
+      "path": [],
+      "champion": "FRANCIA"
+    },
+    "PANAMÁ": {
+      "path": [
+        {
+          "round": "Dieciseisavos de Final",
+          "matchLabel": "Llave 16",
+          "opponent": "PORTUGAL",
+          "opponentRank": 5,
+          "opponentGroup": "K",
+          "date": "3-7-2026",
+          "time": "21:30 hs",
+          "day": "VIERNES"
+        },
+        {
+          "round": "Octavos de Final",
+          "matchLabel": "Octavos Llave 7",
+          "opponent": "IRÁN",
+          "opponentRank": 21,
+          "opponentGroup": "G",
+          "date": "7-7-2026",
+          "time": "12:00 hs",
+          "day": "MARTES"
+        },
+        {
+          "round": "Cuartos de Final",
+          "matchLabel": "Cuartos Llave 4",
+          "opponent": "ARGENTINA",
+          "opponentRank": 3,
+          "opponentGroup": "J",
+          "date": "11-7-2026",
+          "time": "21:00 hs",
+          "day": "SÁBADO"
+        },
+        {
+          "round": "Semifinal",
+          "matchLabel": "Semifinal Llave 2",
+          "opponent": "INGLATERRA",
+          "opponentRank": 4,
+          "opponentGroup": "L",
+          "date": "15-7-2026",
+          "time": "15:00 hs",
+          "day": "MIÉRCOLES"
+        },
+        {
+          "round": "Final",
+          "matchLabel": "Final",
+          "opponent": "FRANCIA",
+          "opponentRank": 1,
+          "opponentGroup": "I",
+          "date": "19-7-2026",
+          "time": "15:00 hs",
+          "day": "DOMINGO"
+        }
+      ],
+      "champion": "PANAMÁ"
+    }
+  }
+}

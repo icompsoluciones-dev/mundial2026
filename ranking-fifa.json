@@ -1,0 +1,846 @@
+[
+  {
+    "pais": "Francia",
+    "posicion": 1
+  },
+  {
+    "pais": "España",
+    "posicion": 2
+  },
+  {
+    "pais": "Argentina",
+    "posicion": 3
+  },
+  {
+    "pais": "Inglaterra",
+    "posicion": 4
+  },
+  {
+    "pais": "Portugal",
+    "posicion": 5
+  },
+  {
+    "pais": "Brasil",
+    "posicion": 6
+  },
+  {
+    "pais": "Países Bajos",
+    "posicion": 7
+  },
+  {
+    "pais": "Marruecos",
+    "posicion": 8
+  },
+  {
+    "pais": "Bélgica",
+    "posicion": 9
+  },
+  {
+    "pais": "Alemania",
+    "posicion": 10
+  },
+  {
+    "pais": "Croacia",
+    "posicion": 11
+  },
+  {
+    "pais": "Italia",
+    "posicion": 12
+  },
+  {
+    "pais": "Colombia",
+    "posicion": 13
+  },
+  {
+    "pais": "Senegal",
+    "posicion": 14
+  },
+  {
+    "pais": "México",
+    "posicion": 15
+  },
+  {
+    "pais": "EEUU",
+    "posicion": 16
+  },
+  {
+    "pais": "Uruguay",
+    "posicion": 17
+  },
+  {
+    "pais": "Japón",
+    "posicion": 18
+  },
+  {
+    "pais": "Suiza",
+    "posicion": 19
+  },
+  {
+    "pais": "Dinamarca",
+    "posicion": 20
+  },
+  {
+    "pais": "RI de Irán",
+    "posicion": 21
+  },
+  {
+    "pais": "Turquía",
+    "posicion": 22
+  },
+  {
+    "pais": "Ecuador",
+    "posicion": 23
+  },
+  {
+    "pais": "Austria",
+    "posicion": 24
+  },
+  {
+    "pais": "República de Corea",
+    "posicion": 25
+  },
+  {
+    "pais": "Nigeria",
+    "posicion": 26
+  },
+  {
+    "pais": "Australia",
+    "posicion": 27
+  },
+  {
+    "pais": "Argelia",
+    "posicion": 28
+  },
+  {
+    "pais": "Egipto",
+    "posicion": 29
+  },
+  {
+    "pais": "Canadá",
+    "posicion": 30
+  },
+  {
+    "pais": "Noruega",
+    "posicion": 31
+  },
+  {
+    "pais": "Ucrania",
+    "posicion": 32
+  },
+  {
+    "pais": "Panamá",
+    "posicion": 33
+  },
+  {
+    "pais": "Costa de Marfil",
+    "posicion": 34
+  },
+  {
+    "pais": "Polonia",
+    "posicion": 35
+  },
+  {
+    "pais": "Rusia",
+    "posicion": 36
+  },
+  {
+    "pais": "Gales",
+    "posicion": 37
+  },
+  {
+    "pais": "Suecia",
+    "posicion": 38
+  },
+  {
+    "pais": "Serbia",
+    "posicion": 39
+  },
+  {
+    "pais": "Paraguay",
+    "posicion": 40
+  },
+  {
+    "pais": "República Checa",
+    "posicion": 41
+  },
+  {
+    "pais": "Hungría",
+    "posicion": 42
+  },
+  {
+    "pais": "Escocia",
+    "posicion": 43
+  },
+  {
+    "pais": "Túnez",
+    "posicion": 44
+  },
+  {
+    "pais": "Camerún",
+    "posicion": 45
+  },
+  {
+    "pais": "RD del Congo",
+    "posicion": 46
+  },
+  {
+    "pais": "Grecia",
+    "posicion": 47
+  },
+  {
+    "pais": "Eslovaquia",
+    "posicion": 48
+  },
+  {
+    "pais": "Venezuela",
+    "posicion": 49
+  },
+  {
+    "pais": "Uzbekistán",
+    "posicion": 50
+  },
+  {
+    "pais": "Costa Rica",
+    "posicion": 51
+  },
+  {
+    "pais": "Mali",
+    "posicion": 52
+  },
+  {
+    "pais": "Perú",
+    "posicion": 53
+  },
+  {
+    "pais": "Chile",
+    "posicion": 54
+  },
+  {
+    "pais": "Qatar",
+    "posicion": 55
+  },
+  {
+    "pais": "Rumanía",
+    "posicion": 56
+  },
+  {
+    "pais": "Irak",
+    "posicion": 57
+  },
+  {
+    "pais": "Eslovenia",
+    "posicion": 58
+  },
+  {
+    "pais": "República de Irlanda",
+    "posicion": 59
+  },
+  {
+    "pais": "Sudáfrica",
+    "posicion": 60
+  },
+  {
+    "pais": "Arabia Saudí",
+    "posicion": 61
+  },
+  {
+    "pais": "Burkina Faso",
+    "posicion": 62
+  },
+  {
+    "pais": "Jordania",
+    "posicion": 63
+  },
+  {
+    "pais": "Albania",
+    "posicion": 64
+  },
+  {
+    "pais": "Bosnia y Herzegovina",
+    "posicion": 65
+  },
+  {
+    "pais": "Honduras",
+    "posicion": 66
+  },
+  {
+    "pais": "Macedonia del Norte",
+    "posicion": 67
+  },
+  {
+    "pais": "Emiratos Árabes Unidos",
+    "posicion": 68
+  },
+  {
+    "pais": "Cabo Verde",
+    "posicion": 69
+  },
+  {
+    "pais": "Irlanda del Norte",
+    "posicion": 70
+  },
+  {
+    "pais": "Jamaica",
+    "posicion": 71
+  },
+  {
+    "pais": "Georgia",
+    "posicion": 72
+  },
+  {
+    "pais": "Finlandia",
+    "posicion": 73
+  },
+  {
+    "pais": "Ghana",
+    "posicion": 74
+  },
+  {
+    "pais": "Islandia",
+    "posicion": 75
+  },
+  {
+    "pais": "Bolivia",
+    "posicion": 76
+  },
+  {
+    "pais": "Israel",
+    "posicion": 77
+  },
+  {
+    "pais": "Kosovo",
+    "posicion": 78
+  },
+  {
+    "pais": "Omán",
+    "posicion": 79
+  },
+  {
+    "pais": "Guinea",
+    "posicion": 80
+  },
+  {
+    "pais": "Montenegro",
+    "posicion": 81
+  },
+  {
+    "pais": "Curazao",
+    "posicion": 82
+  },
+  {
+    "pais": "Haití",
+    "posicion": 83
+  },
+  {
+    "pais": "Siria",
+    "posicion": 84
+  },
+  {
+    "pais": "Nueva Zelanda",
+    "posicion": 85
+  },
+  {
+    "pais": "Bulgaria",
+    "posicion": 86
+  },
+  {
+    "pais": "Gabón",
+    "posicion": 87
+  },
+  {
+    "pais": "Uganda",
+    "posicion": 88
+  },
+  {
+    "pais": "Angola",
+    "posicion": 89
+  },
+  {
+    "pais": "Benín",
+    "posicion": 90
+  },
+  {
+    "pais": "Baréin",
+    "posicion": 91
+  },
+  {
+    "pais": "Zambia",
+    "posicion": 92
+  },
+  {
+    "pais": "Tailandia",
+    "posicion": 93
+  },
+  {
+    "pais": "RP China",
+    "posicion": 94
+  },
+  {
+    "pais": "Palestina",
+    "posicion": 95
+  },
+  {
+    "pais": "Guatemala",
+    "posicion": 96
+  },
+  {
+    "pais": "Bielorrusia",
+    "posicion": 97
+  },
+  {
+    "pais": "Luxemburgo",
+    "posicion": 98
+  },
+  {
+    "pais": "Vietnam",
+    "posicion": 99
+  },
+  {
+    "pais": "El Salvador",
+    "posicion": 100
+  },
+  {
+    "pais": "Mozambique",
+    "posicion": 101
+  },
+  {
+    "pais": "Trinidad y Tobago",
+    "posicion": 102
+  },
+  {
+    "pais": "Tayikistán",
+    "posicion": 103
+  },
+  {
+    "pais": "Madagascar",
+    "posicion": 104
+  },
+  {
+    "pais": "Guinea Ecuatorial",
+    "posicion": 105
+  },
+  {
+    "pais": "Armenia",
+    "posicion": 106
+  },
+  {
+    "pais": "República Kirguisa",
+    "posicion": 107
+  },
+  {
+    "pais": "Líbano",
+    "posicion": 108
+  },
+  {
+    "pais": "Comoras",
+    "posicion": 109
+  },
+  {
+    "pais": "Kazajstán",
+    "posicion": 110
+  },
+  {
+    "pais": "Kenia",
+    "posicion": 111
+  },
+  {
+    "pais": "Libia",
+    "posicion": 112
+  },
+  {
+    "pais": "Tanzania",
+    "posicion": 113
+  },
+  {
+    "pais": "Níger",
+    "posicion": 114
+  },
+  {
+    "pais": "Mauritania",
+    "posicion": 115
+  },
+  {
+    "pais": "Gambia",
+    "posicion": 116
+  },
+  {
+    "pais": "Sudán",
+    "posicion": 117
+  },
+  {
+    "pais": "RDP de Corea",
+    "posicion": 118
+  },
+  {
+    "pais": "Sierra Leona",
+    "posicion": 119
+  },
+  {
+    "pais": "Namibia",
+    "posicion": 120
+  },
+  {
+    "pais": "Togo",
+    "posicion": 121
+  },
+  {
+    "pais": "Indonesia",
+    "posicion": 122
+  },
+  {
+    "pais": "Islas Feroe",
+    "posicion": 123
+  },
+  {
+    "pais": "Azerbaiyán",
+    "posicion": 124
+  },
+  {
+    "pais": "Surinam",
+    "posicion": 125
+  },
+  {
+    "pais": "Chipre",
+    "posicion": 126
+  },
+  {
+    "pais": "Malaui",
+    "posicion": 127
+  },
+  {
+    "pais": "Ruanda",
+    "posicion": 128
+  },
+  {
+    "pais": "Estonia",
+    "posicion": 129
+  },
+  {
+    "pais": "Zimbabue",
+    "posicion": 130
+  },
+  {
+    "pais": "Nicaragua",
+    "posicion": 131
+  },
+  {
+    "pais": "Guinea-Bissáu",
+    "posicion": 132
+  },
+  {
+    "pais": "Congo",
+    "posicion": 133
+  },
+  {
+    "pais": "Kuwait",
+    "posicion": 134
+  },
+  {
+    "pais": "Filipinas",
+    "posicion": 135
+  },
+  {
+    "pais": "India",
+    "posicion": 136
+  },
+  {
+    "pais": "Letonia",
+    "posicion": 137
+  },
+  {
+    "pais": "Malasia",
+    "posicion": 138
+  },
+  {
+    "pais": "República Centroafricana",
+    "posicion": 139
+  },
+  {
+    "pais": "Liberia",
+    "posicion": 140
+  },
+  {
+    "pais": "Turkmenistán",
+    "posicion": 141
+  },
+  {
+    "pais": "Burundi",
+    "posicion": 142
+  },
+  {
+    "pais": "República Dominicana",
+    "posicion": 143
+  },
+  {
+    "pais": "Etiopía",
+    "posicion": 144
+  },
+  {
+    "pais": "Lesoto",
+    "posicion": 145
+  },
+  {
+    "pais": "Botsuana",
+    "posicion": 146
+  },
+  {
+    "pais": "Singapur",
+    "posicion": 147
+  },
+  {
+    "pais": "Lituania",
+    "posicion": 148
+  },
+  {
+    "pais": "Yemen",
+    "posicion": 149
+  },
+  {
+    "pais": "Guyana",
+    "posicion": 150
+  },
+  {
+    "pais": "Nueva Caledonia",
+    "posicion": 151
+  },
+  {
+    "pais": "San Cristóbal y Nieves",
+    "posicion": 152
+  },
+  {
+    "pais": "Islas Salomón",
+    "posicion": 153
+  },
+  {
+    "pais": "Fiyi",
+    "posicion": 154
+  },
+  {
+    "pais": "Hong Kong, China",
+    "posicion": 155
+  },
+  {
+    "pais": "Puerto Rico",
+    "posicion": 156
+  },
+  {
+    "pais": "Tahití",
+    "posicion": 157
+  },
+  {
+    "pais": "Myanmar",
+    "posicion": 158
+  },
+  {
+    "pais": "Moldavia",
+    "posicion": 159
+  },
+  {
+    "pais": "Vanuatu",
+    "posicion": 160
+  },
+  {
+    "pais": "Malta",
+    "posicion": 161
+  },
+  {
+    "pais": "Antigua y Barbuda",
+    "posicion": 162
+  },
+  {
+    "pais": "Granada",
+    "posicion": 163
+  },
+  {
+    "pais": "Cuba",
+    "posicion": 164
+  },
+  {
+    "pais": "Esuatini",
+    "posicion": 165
+  },
+  {
+    "pais": "Bermudas",
+    "posicion": 166
+  },
+  {
+    "pais": "Santa Lucía",
+    "posicion": 167
+  },
+  {
+    "pais": "Papúa Nueva Guinea",
+    "posicion": 168
+  },
+  {
+    "pais": "Afganistán",
+    "posicion": 169
+  },
+  {
+    "pais": "Sudán del Sur",
+    "posicion": 170
+  },
+  {
+    "pais": "San Vicente y las Granadinas",
+    "posicion": 171
+  },
+  {
+    "pais": "Maldivas",
+    "posicion": 172
+  },
+  {
+    "pais": "Andorra",
+    "posicion": 173
+  },
+  {
+    "pais": "Chinese Taipei",
+    "posicion": 174
+  },
+  {
+    "pais": "Montserrat",
+    "posicion": 175
+  },
+  {
+    "pais": "Nepal",
+    "posicion": 176
+  },
+  {
+    "pais": "Camboya",
+    "posicion": 177
+  },
+  {
+    "pais": "Mauricio",
+    "posicion": 178
+  },
+  {
+    "pais": "Barbados",
+    "posicion": 179
+  },
+  {
+    "pais": "Belice",
+    "posicion": 180
+  },
+  {
+    "pais": "Bangladesh",
+    "posicion": 181
+  },
+  {
+    "pais": "Dominica",
+    "posicion": 182
+  },
+  {
+    "pais": "Chad",
+    "posicion": 183
+  },
+  {
+    "pais": "Eritrea",
+    "posicion": 184
+  },
+  {
+    "pais": "Laos",
+    "posicion": 185
+  },
+  {
+    "pais": "Bután",
+    "posicion": 186
+  },
+  {
+    "pais": "Mongolia",
+    "posicion": 187
+  },
+  {
+    "pais": "Islas Cook",
+    "posicion": 188
+  },
+  {
+    "pais": "Aruba",
+    "posicion": 189
+  },
+  {
+    "pais": "Samoa",
+    "posicion": 190
+  },
+  {
+    "pais": "Sri Lanka",
+    "posicion": 191
+  },
+  {
+    "pais": "Samoa Estadounidense",
+    "posicion": 192
+  },
+  {
+    "pais": "Brunéi Darussalam",
+    "posicion": 193
+  },
+  {
+    "pais": "Macao",
+    "posicion": 194
+  },
+  {
+    "pais": "Islas Caimán",
+    "posicion": 195
+  },
+  {
+    "pais": "Santo Tomé y Príncipe",
+    "posicion": 196
+  },
+  {
+    "pais": "Yibuti",
+    "posicion": 197
+  },
+  {
+    "pais": "Somalia",
+    "posicion": 198
+  },
+  {
+    "pais": "Tonga",
+    "posicion": 199
+  },
+  {
+    "pais": "Timor Oriental",
+    "posicion": 200
+  },
+  {
+    "pais": "Guam",
+    "posicion": 201
+  },
+  {
+    "pais": "Pakistán",
+    "posicion": 202
+  },
+  {
+    "pais": "Gibraltar",
+    "posicion": 203
+  },
+  {
+    "pais": "Seychelles",
+    "posicion": 204
+  },
+  {
+    "pais": "Turcas y Caicos",
+    "posicion": 205
+  },
+  {
+    "pais": "Liechtenstein",
+    "posicion": 206
+  },
+  {
+    "pais": "Bahamas",
+    "posicion": 207
+  },
+  {
+    "pais": "Islas Vírgenes Británicas",
+    "posicion": 208
+  },
+  {
+    "pais": "Islas Vírgenes Estadounidenses",
+    "posicion": 209
+  },
+  {
+    "pais": "Anguila",
+    "posicion": 210
+  },
+  {
+    "pais": "San Marino",
+    "posicion": 211
+  }
+]
