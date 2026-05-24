@@ -47,8 +47,8 @@ async function fetchData() {
     populatePopularTags();
     populateGroupsUI();
 
-    // Select default team on load (or show nothing, let's load COREA as default highlight to show off)
-    selectTeam("COREA");
+    // Select default team on load (or show nothing, let's load FRANCIA as default highlight to show off)
+    selectTeam("FRANCIA");
   } catch (error) {
     console.error("Failed to fetch world cup data:", error);
     // Display error message to user

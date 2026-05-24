@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mundial 2026 - Camino al Campeón</title>
-  <meta name="description" content="Visualiza interactivamente el camino de cualquier selección de fútbol para convertirse en campeón del Mundial 2026 según el ranking FIFA oficial.">
+  <meta name="description"
+    content="Visualiza interactivamente el camino de cualquier selección de fútbol para convertirse en campeón del Mundial 2026 según el ranking FIFA oficial.">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
   <!-- FontAwesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Background decorations -->
@@ -32,17 +37,20 @@
   </header>
 
   <main class="container main-content">
-    
+
     <!-- Selection Section -->
     <section class="selection-section Card animate-fade-in" id="sec-selection">
       <h2 class="section-title">Elige tu Selección</h2>
-      <p class="section-desc">Escribe o selecciona un país para predecir todos sus cruces y rivales en la fase eliminatoria hasta levantar la Copa del Mundo.</p>
-      
+      <p class="section-desc">Escribe o selecciona un país para predecir todos sus cruces y rivales en la fase
+        eliminatoria hasta levantar la Copa del Mundo.</p>
+
       <div class="search-container">
         <div class="search-box-wrapper">
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
-          <input type="text" id="team-search" placeholder="Escribe un país (ej. Argentina, España, Corea...)" autocomplete="off">
-          <button id="clear-search-btn" class="clear-btn" aria-label="Limpiar búsqueda"><i class="fa-solid fa-xmark"></i></button>
+          <input type="text" id="team-search" placeholder="Escribe un país (ej. Argentina, España, Corea...)"
+            autocomplete="off">
+          <button id="clear-search-btn" class="clear-btn" aria-label="Limpiar búsqueda"><i
+              class="fa-solid fa-xmark"></i></button>
         </div>
         <div id="autocomplete-list" class="autocomplete-suggestions hidden"></div>
       </div>
@@ -57,20 +65,21 @@
 
     <!-- App Content Wrapper (Hidden initially until a team is selected or shows default simulation) -->
     <div id="dashboard-wrapper" class="hidden">
-      
+
       <!-- Team Status Bar -->
       <section class="team-status-bar Card animate-slide-up" id="sec-team-status">
         <div class="status-flex-container">
           <div class="team-info-header">
             <div class="flag-placeholder-large" id="selected-team-flag"></div>
             <div>
-              <h2 id="selected-team-name">República de Corea</h2>
-              <p class="group-info-text">Grupo <span id="selected-team-group-letter">A</span> • Standing Inicial: <span id="selected-team-standing">2°</span></p>
+              <h2 id="selected-team-name">Francia</h2>
+              <p class="group-info-text">Grupo <span id="selected-team-group-letter">I</span> • Standing Inicial: <span
+                  id="selected-team-standing">1°</span></p>
             </div>
           </div>
           <div class="ranking-badge">
             <span class="rank-title">Ranking FIFA</span>
-            <span class="rank-value" id="selected-team-rank-val">#25</span>
+            <span class="rank-value" id="selected-team-rank-val">#1</span>
           </div>
         </div>
       </section>
@@ -95,7 +104,8 @@
       <!-- Bracket View -->
       <section id="view-content-bracket" class="view-content hidden animate-fade-in">
         <div class="bracket-instructions">
-          <i class="fa-solid fa-circle-info"></i> Desplázate horizontalmente para ver todas las llaves del torneo. El camino del equipo seleccionado está destacado.
+          <i class="fa-solid fa-circle-info"></i> Desplázate horizontalmente para ver todas las llaves del torneo. El
+          camino del equipo seleccionado está destacado.
         </div>
         <div class="bracket-outer-scroll">
           <div class="bracket-container" id="bracket-structure">
@@ -117,7 +127,8 @@
       </div>
       <div class="collapsible-content hidden" id="groups-content">
         <p class="summary-disclaimer">
-          Las posiciones de los grupos se determinan por el Ranking FIFA. Los mejores 8 terceros puestos avanzan a Dieciseisavos de Final.
+          Las posiciones de los grupos se determinan por el Ranking FIFA. Los mejores 8 terceros puestos avanzan a
+          Dieciseisavos de Final.
         </p>
         <div class="thirds-table-container">
           <h4>Tabla de Terceros Puestos (Clasificación Oficial)</h4>
@@ -156,4 +167,5 @@
   <!-- Custom JS -->
   <script src="app.js"></script>
 </body>
+
 </html>
