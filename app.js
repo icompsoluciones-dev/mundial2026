@@ -42,11 +42,11 @@ async function fetchData() {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
     worldCupData = await response.json();
-    
+
     // Populate static widgets
     populatePopularTags();
     populateGroupsUI();
-    
+
     // Select default team on load (or show nothing, let's load COREA as default highlight to show off)
     selectTeam("COREA");
   } catch (error) {
@@ -71,7 +71,7 @@ function setupEventListeners() {
       elSuggestions.classList.remove('hidden');
     }
   });
-  
+
   // Clear search button
   elClearSearch.addEventListener('click', () => {
     elSearch.value = '';
@@ -79,7 +79,7 @@ function setupEventListeners() {
     elClearSearch.style.display = 'none';
     elSearch.focus();
   });
-  
+
   // Hide suggestions when clicking outside
   document.addEventListener('click', (e) => {
     if (!e.target.closest('.search-container')) {
@@ -139,28 +139,28 @@ function populateGroupsUI() {
   // 1. Group cards
   elGroupsGrid.innerHTML = '';
   const sortedGroupKeys = Object.keys(worldCupData.groups).sort();
-  
+
   sortedGroupKeys.forEach(groupLetter => {
     const groupCard = document.createElement('div');
     groupCard.className = 'group-card';
-    
+
     let html = `<h5>Grupo ${groupLetter}</h5>`;
     worldCupData.groups[groupLetter].forEach(team => {
       const isQualified = team.standing <= 2 || isThirdQualified(team.name);
       const isSelected = selectedTeam === team.name;
-      
+
       html += `
         <div class="group-card-team ${isSelected ? 'selected-highlight' : ''}">
           <div class="group-team-info">
             <span class="standing-num">${team.standing}</span>
-            <span class="flag-placeholder" style="background: ${getTeamGradient(team.name)}">${team.name.substring(0,2)}</span>
+            <span class="flag-placeholder" style="background: ${getTeamGradient(team.name)}">${team.name.substring(0, 2)}</span>
             <span class="group-team-name" style="color: ${isQualified ? '#fff' : 'var(--text-muted)'}">${team.name}</span>
           </div>
           <span class="group-team-rank-meta">#${team.rank}</span>
         </div>
       `;
     });
-    
+
     groupCard.innerHTML = html;
     elGroupsGrid.appendChild(groupCard);
   });
@@ -176,7 +176,7 @@ function populateGroupsUI() {
       <td>${item.overallOrder}</td>
       <td style="font-weight: 600;">Grupo ${item.group}</td>
       <td style="display: flex; align-items: center; gap: 8px;">
-        <span class="flag-placeholder" style="background: ${getTeamGradient(item.team.name)}">${item.team.name.substring(0,2)}</span>
+        <span class="flag-placeholder" style="background: ${getTeamGradient(item.team.name)}">${item.team.name.substring(0, 2)}</span>
         <span style="color: #fff; font-weight: 500;">${item.team.name}</span>
       </td>
       <td>#${item.team.rank}</td>
@@ -203,18 +203,18 @@ function handleSearchInput() {
     elClearSearch.style.display = 'none';
     return;
   }
-  
+
   elClearSearch.style.display = 'block';
-  
+
   // Filter matches
   const matches = Object.keys(worldCupData.teams).filter(t => t.includes(val) || worldCupData.teams[t].mappedName.toUpperCase().includes(val));
-  
+
   if (matches.length === 0) {
     elSuggestions.innerHTML = '<div style="padding: 12px 18px; color: var(--text-muted); font-size: 0.9rem;">No se encontraron selecciones</div>';
     elSuggestions.classList.remove('hidden');
     return;
   }
-  
+
   elSuggestions.innerHTML = '';
   matches.forEach(match => {
     const info = worldCupData.teams[match];
@@ -222,22 +222,22 @@ function handleSearchInput() {
     div.className = 'suggestion-item';
     div.innerHTML = `
       <div class="suggestion-left">
-        <span class="flag-placeholder" style="background: ${getTeamGradient(match)}">${match.substring(0,2)}</span>
+        <span class="flag-placeholder" style="background: ${getTeamGradient(match)}">${match.substring(0, 2)}</span>
         <span class="suggestion-name">${match}</span>
         <span class="suggestion-group">Grupo ${info.group}</span>
       </div>
       <span class="suggestion-rank">Rank: #${info.rank}</span>
     `;
-    
+
     div.addEventListener('click', () => {
       elSearch.value = match;
       selectTeam(match);
       elSuggestions.classList.add('hidden');
     });
-    
+
     elSuggestions.appendChild(div);
   });
-  
+
   elSuggestions.classList.remove('hidden');
 }
 
@@ -246,7 +246,7 @@ let activeSuggestionIdx = -1;
 function handleSearchKeys(e) {
   const items = elSuggestions.querySelectorAll('.suggestion-item');
   if (items.length === 0) return;
-  
+
   if (e.key === 'ArrowDown') {
     e.preventDefault();
     activeSuggestionIdx = (activeSuggestionIdx + 1) % items.length;
@@ -281,27 +281,27 @@ function highlightSuggestion(items) {
 // Select team and refresh views
 function selectTeam(teamName) {
   if (!worldCupData.teams[teamName]) return;
-  
+
   selectedTeam = teamName;
   activeSuggestionIdx = -1;
-  
+
   const info = worldCupData.teams[teamName];
-  
+
   // Find initial standing in group
   const groupTeams = worldCupData.groups[info.group];
   const standingObj = groupTeams.find(t => t.name === teamName);
   const standingStr = standingObj ? `${standingObj.standing}°` : '3°';
-  
+
   // Update header info
   elSelectedFlag.style.background = getTeamGradient(teamName);
-  elSelectedFlag.innerText = teamName.substring(0,2);
+  elSelectedFlag.innerText = teamName.substring(0, 2);
   elSelectedName.innerText = teamName;
   elSelectedGroup.innerText = info.group;
   elSelectedStanding.innerText = standingStr;
   elSelectedRank.innerText = `#${info.rank}`;
-  
+
   elDashboard.classList.remove('hidden');
-  
+
   // Refresh UI panels
   renderTimeline();
   renderBracket();
@@ -311,10 +311,10 @@ function selectTeam(teamName) {
 // Switch between Timeline and Bracket views
 function switchView(viewName) {
   currentView = viewName;
-  
+
   const btnTimeline = document.getElementById('tab-timeline');
   const btnBracket = document.getElementById('tab-bracket');
-  
+
   if (viewName === 'timeline') {
     btnTimeline.classList.add('active');
     btnBracket.classList.remove('active');
@@ -331,11 +331,11 @@ function switchView(viewName) {
 // Render the timeline (path) view
 function renderTimeline() {
   elTimelineSteps.innerHTML = '';
-  
+
   // Get simulation path for selected team
   const simulation = worldCupData.pathsForTeams[selectedTeam];
   if (!simulation) return;
-  
+
   // 1. Group Stage Card (Start)
   const groupCard = document.createElement('div');
   groupCard.className = 'timeline-step animate-slide-up';
@@ -355,7 +355,7 @@ function renderTimeline() {
           <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:4px;">
             ${worldCupData.groups[worldCupData.teams[selectedTeam].group].map(t => `
               <span class="tag" style="cursor:default; background: ${t.name === selectedTeam ? 'rgba(16,185,129,0.12)' : 'rgba(0,0,0,0.2)'}; border-color: ${t.name === selectedTeam ? 'var(--accent-green)' : 'var(--border-color)'}; color: ${t.name === selectedTeam ? 'var(--accent-green)' : 'var(--text-secondary)'}">
-                <span class="flag-placeholder" style="width:20px; height:14px; font-size:0.5rem; background:${getTeamGradient(t.name)}">${t.name.substring(0,2)}</span>
+                <span class="flag-placeholder" style="width:20px; height:14px; font-size:0.5rem; background:${getTeamGradient(t.name)}">${t.name.substring(0, 2)}</span>
                 ${t.name}
               </span>
             `).join('')}
@@ -365,7 +365,7 @@ function renderTimeline() {
     </div>
   `;
   elTimelineSteps.appendChild(groupCard);
-  
+
   // 2. Knockout Cards
   const icons = {
     "Dieciseisavos de Final": "fa-dice",
@@ -374,14 +374,14 @@ function renderTimeline() {
     "Semifinal": "fa-code-branch",
     "Final": "fa-crown"
   };
-  
+
   simulation.path.forEach((step, idx) => {
     const stepDiv = document.createElement('div');
     stepDiv.className = 'timeline-step animate-slide-up';
     stepDiv.style.animationDelay = `${(idx + 1) * 0.1}s`;
-    
+
     const icon = icons[step.round] || "fa-futbol";
-    
+
     stepDiv.innerHTML = `
       <div class="timeline-marker"><i class="fa-solid ${icon}"></i></div>
       <div class="timeline-content">
@@ -394,7 +394,7 @@ function renderTimeline() {
         </p>
         <div class="match-box">
           <div class="match-team selected-fav">
-            <span class="flag-placeholder" style="background: ${getTeamGradient(selectedTeam)}">${selectedTeam.substring(0,2)}</span>
+            <span class="flag-placeholder" style="background: ${getTeamGradient(selectedTeam)}">${selectedTeam.substring(0, 2)}</span>
             <span class="team-name">${selectedTeam}</span>
           </div>
           <span class="match-vs">VS</span>
@@ -403,26 +403,29 @@ function renderTimeline() {
               <span class="team-name" style="font-weight:600;">${step.opponent}</span>
               <div class="opponent-meta">Ranking FIFA: <span>#${step.opponentRank}</span> • Grupo: <span>${step.opponentGroup}</span></div>
             </div>
-            <span class="flag-placeholder" style="background: ${getTeamGradient(step.opponent)}">${step.opponent.substring(0,2)}</span>
+            <span class="flag-placeholder" style="background: ${getTeamGradient(step.opponent)}">${step.opponent.substring(0, 2)}</span>
           </div>
         </div>
       </div>
     `;
     elTimelineSteps.appendChild(stepDiv);
   });
-  
+
   // 3. Trophy Celebration Card (End)
-  const celebration = document.createElement('div');
-  celebration.className = 'champion-celebration animate-slide-up';
-  celebration.style.animationDelay = `${(simulation.path.length + 1) * 0.1}s`;
-  celebration.innerHTML = `
-    <div class="celebration-trophy animate-gold"><i class="fa-solid fa-trophy"></i></div>
-    <h3 class="celebration-title">${selectedTeam} Campeón Mundial 2026</h3>
-    <p class="celebration-desc">
-      ¡Felicitaciones! Tras vencer a <strong>${simulation.path[simulation.path.length - 1].opponent}</strong> en la Final, <strong>${selectedTeam}</strong> se consagra como campeón indiscutido del mundo.
-    </p>
+  const celebrationStep = document.createElement('div');
+  celebrationStep.className = 'timeline-step animate-slide-up';
+  celebrationStep.style.animationDelay = `${(simulation.path.length + 1) * 0.1}s`;
+  celebrationStep.innerHTML = `
+    <div class="timeline-marker" style="border-color: var(--accent-gold); background: var(--bg-primary);"><i class="fa-solid fa-trophy" style="color: var(--accent-gold); font-size: 0.7rem;"></i></div>
+    <div class="champion-celebration" style="margin: 0;">
+      <div class="celebration-trophy animate-gold"><i class="fa-solid fa-trophy"></i></div>
+      <h3 class="celebration-title">${selectedTeam} Campeón Mundial 2026</h3>
+      <p class="celebration-desc">
+        ¡Felicitaciones! Tras vencer a <strong>${simulation.path[simulation.path.length - 1].opponent}</strong> en la Final, <strong>${selectedTeam}</strong> se consagra como campeón indiscutido del mundo.
+      </p>
+    </div>
   `;
-  elTimelineSteps.appendChild(celebration);
+  elTimelineSteps.appendChild(celebrationStep);
 }
 
 // Resolve matches dynamically for the selected team
@@ -458,11 +461,11 @@ function runDynamicSimulation() {
     const isT1Selected = carriesSelected(t1);
     const isT2Selected = carriesSelected(t2);
     let winner;
-    
+
     if (isT1Selected) winner = t1;
     else if (isT2Selected) winner = t2;
     else winner = t1.rank < t2.rank ? t1 : t2;
-    
+
     return {
       name: winner.name,
       rank: winner.rank,
@@ -540,10 +543,10 @@ function getGroupTeam(group, pos) {
 // Render the bracket view
 function renderBracket() {
   elBracketStructure.innerHTML = '';
-  
+
   // Calculate dynamic bracket simulation based on selected team
   const sim = runDynamicSimulation();
-  
+
   // Define bracket columns structure
   const columns = [
     { title: "Dieciseisavos de Final", type: "R32", list: sim.R32, winners: sim.R32_Winners },
@@ -552,25 +555,25 @@ function renderBracket() {
     { title: "Semifinal", type: "S", list: sim.S, winners: sim.S_Winners },
     { title: "Final", type: "F", list: { "F": sim.F }, winners: { "F": sim.Champion } }
   ];
-  
+
   columns.forEach(col => {
     const colDiv = document.createElement('div');
     colDiv.className = 'bracket-column';
-    
+
     colDiv.innerHTML = `<div class="bracket-column-title">${col.title}</div>`;
-    
+
     const listDiv = document.createElement('div');
     listDiv.className = 'bracket-matches-list';
-    
+
     Object.keys(col.list).forEach(key => {
       const match = col.list[key];
       const winner = col.winners[key];
-      
+
       const t1 = match.t1;
       const t2 = match.t2;
-      
+
       const isT1Winner = winner.name === t1.name;
-      
+
       // Determine if this match card is part of selected team's path
       const carriesSelected = (teamObj) => {
         if (!teamObj) return false;
@@ -580,10 +583,10 @@ function renderBracket() {
         return false;
       };
       const isPath = carriesSelected(t1) || carriesSelected(t2);
-      
+
       const matchCard = document.createElement('div');
       matchCard.className = `bracket-match ${isPath ? 'highlight-path' : ''}`;
-      
+
       matchCard.innerHTML = `
         <div class="bracket-match-header">
           <span>${match.label || 'Match'}</span>
@@ -592,7 +595,7 @@ function renderBracket() {
         
         <div class="bracket-match-team ${isT1Winner ? 'winner' : 'loser'} ${t1.name === selectedTeam ? 'selected-highlight' : ''}">
           <div class="bracket-team-left">
-            <span class="flag-placeholder" style="width:20px; height:14px; font-size:0.5rem; background: ${getTeamGradient(t1.name)}">${t1.name.substring(0,2)}</span>
+            <span class="flag-placeholder" style="width:20px; height:14px; font-size:0.5rem; background: ${getTeamGradient(t1.name)}">${t1.name.substring(0, 2)}</span>
             <span class="bracket-team-name">${t1.name}</span>
             <span class="bracket-team-rank">#${t1.rank}</span>
           </div>
@@ -601,7 +604,7 @@ function renderBracket() {
         
         <div class="bracket-match-team ${!isT1Winner ? 'winner' : 'loser'} ${t2.name === selectedTeam ? 'selected-highlight' : ''}">
           <div class="bracket-team-left">
-            <span class="flag-placeholder" style="width:20px; height:14px; font-size:0.5rem; background: ${getTeamGradient(t2.name)}">${t2.name.substring(0,2)}</span>
+            <span class="flag-placeholder" style="width:20px; height:14px; font-size:0.5rem; background: ${getTeamGradient(t2.name)}">${t2.name.substring(0, 2)}</span>
             <span class="bracket-team-name">${t2.name}</span>
             <span class="bracket-team-rank">#${t2.rank}</span>
           </div>
@@ -610,7 +613,7 @@ function renderBracket() {
       `;
       listDiv.appendChild(matchCard);
     });
-    
+
     colDiv.appendChild(listDiv);
     elBracketStructure.appendChild(colDiv);
   });
