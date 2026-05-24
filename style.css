@@ -285,7 +285,7 @@ h6 {
 }
 
 .logic-select {
-  background: rgba(255, 255, 255, 0.05);
+  background: var(--bg-secondary);
   border: 1px solid var(--border-color);
   color: var(--text-primary);
   padding: 6px 12px;
@@ -295,6 +295,15 @@ h6 {
   outline: none;
   cursor: pointer;
   transition: var(--transition);
+}
+
+.logic-select:hover {
+  border-color: var(--border-color-hover);
+}
+
+.logic-select option {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .logic-select:focus {
