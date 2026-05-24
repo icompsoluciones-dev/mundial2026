@@ -34,6 +34,7 @@ const elThirdsTbody = document.getElementById('thirds-tbody');
 window.addEventListener('DOMContentLoaded', () => {
   fetchData();
   setupEventListeners();
+  setupAnalyticsTracking();
 });
 
 // Fetch pre-calculated data JSON
@@ -108,6 +109,30 @@ function setupEventListeners() {
   elLogicSelect.addEventListener('change', (e) => {
     simulationMode = e.target.value;
     if (selectedTeam) selectTeam(selectedTeam);
+  });
+}
+
+// Track contact clicks for conversions
+function setupAnalyticsTracking() {
+  // Seleccionamos los enlaces de contacto
+  const contactLinks = document.querySelectorAll('a[href*="icompsoluciones-dev.github.io"]');
+
+  contactLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      // Determinamos si es el link del footer o el botón principal
+      const location = link.classList.contains('btn-glow') ? 'cta_main_button' : 'footer_link';
+
+      // Enviamos el evento a Google Analytics
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          'event_category': 'engagement',
+          'event_label': 'Contact Click',
+          'contact_location': location,
+          'method': 'outbound_link'
+        });
+        console.log('Conversion event sent: generate_lead from ' + location);
+      }
+    });
   });
 }
 
