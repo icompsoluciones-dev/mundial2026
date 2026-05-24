@@ -52,6 +52,14 @@
           <button id="clear-search-btn" class="clear-btn" aria-label="Limpiar búsqueda"><i
               class="fa-solid fa-xmark"></i></button>
         </div>
+        <div class="logic-selector-container">
+          <label for="simulation-logic"><i class="fa-solid fa-gears"></i> Criterio de Simulación:</label>
+          <select id="simulation-logic" class="logic-select">
+            <option value="favorites">Favoritos (Mejor Ranking FIFA)</option>
+            <option value="underdogs">Sorpresas (El rival "débil" gana)</option>
+            <option value="random">Aleatorio (50/50 Probabilidades)</option>
+          </select>
+        </div>
         <div id="autocomplete-list" class="autocomplete-suggestions hidden"></div>
       </div>
 

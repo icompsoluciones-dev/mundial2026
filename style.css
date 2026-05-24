@@ -270,6 +270,37 @@ h6 {
   margin-bottom: 20px;
 }
 
+.logic-selector-container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 5px;
+}
+
+.logic-selector-container label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.logic-select {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  outline: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.logic-select:focus {
+  border-color: var(--accent-green);
+}
+
 .search-box-wrapper {
   display: flex;
   align-items: center;

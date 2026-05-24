@@ -2,6 +2,7 @@
 let worldCupData = null;
 let selectedTeam = null;
 let currentView = 'timeline'; // 'timeline' or 'bracket'
+let simulationMode = 'favorites';
 
 // Popular teams for quick tags
 const POPULAR_TEAMS = ["COREA", "ESPAÑA", "ARGENTINA", "MÉXICO", "BRASIL", "FRANCIA", "ALEMANIA", "INGLATERRA", "PORTUGAL"];
@@ -17,6 +18,7 @@ const elSelectedName = document.getElementById('selected-team-name');
 const elSelectedGroup = document.getElementById('selected-team-group-letter');
 const elSelectedStanding = document.getElementById('selected-team-standing');
 const elSelectedRank = document.getElementById('selected-team-rank-val');
+const elLogicSelect = document.getElementById('simulation-logic');
 
 const elTimelineView = document.getElementById('view-content-timeline');
 const elBracketView = document.getElementById('view-content-bracket');
@@ -100,6 +102,12 @@ function setupEventListeners() {
       elGroupsContent.classList.add('hidden');
       elGroupsHeader.classList.remove('open');
     }
+  });
+
+  // Logic mode selector
+  elLogicSelect.addEventListener('change', (e) => {
+    simulationMode = e.target.value;
+    if (selectedTeam) selectTeam(selectedTeam);
   });
 }
 
@@ -328,15 +336,45 @@ function switchView(viewName) {
   }
 }
 
+// Helper to extract the dynamic path of the selected team from the simulation
+function getDynamicPathFromSim(sim) {
+  const path = [];
+  const rounds = [
+    { key: 'R32', label: 'Dieciseisavos de Final' },
+    { key: 'O', label: 'Octavos de Final' },
+    { key: 'C', label: 'Cuartos de Final' },
+    { key: 'S', label: 'Semifinal' },
+    { key: 'F', label: 'Final' }
+  ];
+
+  rounds.forEach(r => {
+    const matches = r.key === 'F' ? { "F": sim.F } : sim[r.key];
+    for (const key in matches) {
+      const match = matches[key];
+      if (match.t1.name === selectedTeam || match.t2.name === selectedTeam) {
+        const opponent = match.t1.name === selectedTeam ? match.t2 : match.t1;
+        path.push({
+          round: r.label,
+          matchLabel: match.label || r.label,
+          opponent: opponent.name,
+          opponentRank: opponent.rank,
+          opponentGroup: opponent.group,
+          date: match.date,
+          time: match.time || "20:00 hs",
+          day: match.day || "SÁBADO"
+        });
+      }
+    }
+  });
+  return { path };
+}
+
 // Render the timeline (path) view
 function renderTimeline() {
   elTimelineSteps.innerHTML = '';
+  const simulation = getDynamicPathFromSim(runDynamicSimulation());
 
-  // Get simulation path for selected team
-  const simulation = worldCupData.pathsForTeams[selectedTeam];
-  if (!simulation) return;
-
-  // 1. Group Stage Card (Start)
+  // 1. Group Stage Card
   const groupCard = document.createElement('div');
   groupCard.className = 'timeline-step animate-slide-up';
   groupCard.innerHTML = `
@@ -354,11 +392,11 @@ function renderTimeline() {
           <span style="font-size:0.75rem; text-transform:uppercase; color:var(--text-muted); font-weight:600; letter-spacing:0.05em;">Integrantes del Grupo</span>
           <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:4px;">
             ${worldCupData.groups[worldCupData.teams[selectedTeam].group].map(t => `
-              <span class="tag" style="cursor:default; background: ${t.name === selectedTeam ? 'rgba(16,185,129,0.12)' : 'rgba(0,0,0,0.2)'}; border-color: ${t.name === selectedTeam ? 'var(--accent-green)' : 'var(--border-color)'}; color: ${t.name === selectedTeam ? 'var(--accent-green)' : 'var(--text-secondary)'}">
-                <span class="flag-placeholder" style="width:20px; height:14px; font-size:0.5rem; background:${getTeamGradient(t.name)}">${t.name.substring(0, 2)}</span>
-                ${t.name}
-              </span>
-            `).join('')}
+                <span class="tag" style="cursor:default; background: ${t.name === selectedTeam ? 'rgba(16,185,129,0.12)' : 'rgba(0,0,0,0.2)'}; border-color: ${t.name === selectedTeam ? 'var(--accent-green)' : 'var(--border-color)'}; color: ${t.name === selectedTeam ? 'var(--accent-green)' : 'var(--text-secondary)'}">
+                  <span class="flag-placeholder" style="width:20px; height:14px; font-size:0.5rem; background:${getTeamGradient(t.name)}">${t.name.substring(0, 2)}</span>
+                  ${t.name}
+                </span>
+              `).join('')}
           </div>
         </div>
       </div>
@@ -407,7 +445,7 @@ function renderTimeline() {
           </div>
         </div>
       </div>
-    `;
+  `;
     elTimelineSteps.appendChild(stepDiv);
   });
 
@@ -418,12 +456,12 @@ function renderTimeline() {
   celebrationStep.innerHTML = `
     <div class="timeline-marker" style="border-color: var(--accent-gold); background: var(--bg-primary);"><i class="fa-solid fa-trophy" style="color: var(--accent-gold); font-size: 0.7rem;"></i></div>
     <div class="champion-celebration" style="margin: 0;">
-      <div class="celebration-trophy animate-gold"><i class="fa-solid fa-trophy"></i></div>
-      <h3 class="celebration-title">${selectedTeam} Campeón Mundial 2026</h3>
-      <p class="celebration-desc">
-        ¡Felicitaciones! Tras vencer a <strong>${simulation.path[simulation.path.length - 1].opponent}</strong> en la Final, <strong>${selectedTeam}</strong> se consagra como campeón indiscutido del mundo.
-      </p>
-    </div>
+        <div class="celebration-trophy animate-gold"><i class="fa-solid fa-trophy"></i></div>
+        <h3 class="celebration-title">${selectedTeam} Campeón Mundial 2026</h3>
+        <p class="celebration-desc">
+          ¡Felicitaciones! Tras vencer a <strong>${simulation.path[simulation.path.length - 1].opponent}</strong> en la Final, <strong>${selectedTeam}</strong> se consagra como campeón indiscutido del mundo.
+        </p>
+      </div>
   `;
   elTimelineSteps.appendChild(celebrationStep);
 }
@@ -462,16 +500,27 @@ function runDynamicSimulation() {
     const isT2Selected = carriesSelected(t2);
     let winner;
 
-    if (isT1Selected) winner = t1;
-    else if (isT2Selected) winner = t2;
-    else winner = t1.rank < t2.rank ? t1 : t2;
+    // Selected team always has "plot armor" for the Champion Path view
+    if (isT1Selected) {
+      winner = t1;
+    } else if (isT2Selected) {
+      winner = t2;
+    } else {
+      if (simulationMode === 'favorites') {
+        winner = t1.rank < t2.rank ? t1 : t2;
+      } else if (simulationMode === 'underdogs') {
+        winner = t1.rank > t2.rank ? t1 : t2;
+      } else { // Random mode
+        winner = Math.random() > 0.5 ? t1 : t2;
+      }
+    }
 
     return {
       name: winner.name,
       rank: winner.rank,
       group: winner.group,
-      left: t1,
-      right: t2
+      left: t1, // Store for bracket visualization
+      right: t2  // Store for bracket visualization
     };
   };
 
@@ -482,14 +531,14 @@ function runDynamicSimulation() {
   }
 
   const o = {
-    "O1": { label: "Octavos 1", t1: r32W["L2"], t2: r32W["L5"], date: "4-7-2026" },
-    "O2": { label: "Octavos 2", t1: r32W["L1"], t2: r32W["L3"], date: "4-7-2026" },
-    "O3": { label: "Octavos 3", t1: r32W["L11"], t2: r32W["L12"], date: "6-7-2026" },
-    "O4": { label: "Octavos 4", t1: r32W["L9"], t2: r32W["L10"], date: "6-7-2026" },
-    "O5": { label: "Octavos 5", t1: r32W["L4"], t2: r32W["L6"], date: "5-7-2026" },
-    "O6": { label: "Octavos 6", t1: r32W["L7"], t2: r32W["L8"], date: "5-7-2026" },
-    "O7": { label: "Octavos 7", t1: r32W["L14"], t2: r32W["L16"], date: "7-7-2026" },
-    "O8": { label: "Octavos 8", t1: r32W["L13"], t2: r32W["L15"], date: "7-7-2026" }
+    "O1": { label: "Octavos 1", t1: r32W["L2"], t2: r32W["L5"], date: "4-7-2026", time: "17:00 hs", day: "SÁBADO" },
+    "O2": { label: "Octavos 2", t1: r32W["L1"], t2: r32W["L3"], date: "4-7-2026", time: "13:00 hs", day: "SÁBADO" },
+    "O3": { label: "Octavos 3", t1: r32W["L11"], t2: r32W["L12"], date: "6-7-2026", time: "15:00 hs", day: "LUNES" },
+    "O4": { label: "Octavos 4", t1: r32W["L9"], t2: r32W["L10"], date: "6-7-2026", time: "20:00 hs", day: "LUNES" },
+    "O5": { label: "Octavos 5", t1: r32W["L4"], t2: r32W["L6"], date: "5-7-2026", time: "16:00 hs", day: "DOMINGO" },
+    "O6": { label: "Octavos 6", t1: r32W["L7"], t2: r32W["L8"], date: "5-7-2026", time: "20:00 hs", day: "DOMINGO" },
+    "O7": { label: "Octavos 7", t1: r32W["L14"], t2: r32W["L16"], date: "7-7-2026", time: "12:00 hs", day: "MARTES" },
+    "O8": { label: "Octavos 8", t1: r32W["L13"], t2: r32W["L15"], date: "7-7-2026", time: "16:00 hs", day: "MARTES" }
   };
   const oW = {};
   for (const [k, v] of Object.entries(o)) {
@@ -497,10 +546,10 @@ function runDynamicSimulation() {
   }
 
   const c = {
-    "C1": { label: "Cuartos 1", t1: oW["O1"], t2: oW["O2"], date: "9-7-2026" },
-    "C2": { label: "Cuartos 2", t1: oW["O5"], t2: oW["O6"], date: "10-7-2026" },
-    "C3": { label: "Cuartos 3", t1: oW["O3"], t2: oW["O4"], date: "11-7-2026" },
-    "C4": { label: "Cuartos 4", t1: oW["O7"], t2: oW["O8"], date: "11-7-2026" }
+    "C1": { label: "Cuartos 1", t1: oW["O1"], t2: oW["O2"], date: "9-7-2026", time: "16:00 hs", day: "JUEVES" },
+    "C2": { label: "Cuartos 2", t1: oW["O5"], t2: oW["O6"], date: "10-7-2026", time: "15:00 hs", day: "VIERNES" },
+    "C3": { label: "Cuartos 3", t1: oW["O3"], t2: oW["O4"], date: "11-7-2026", time: "17:00 hs", day: "SÁBADO" },
+    "C4": { label: "Cuartos 4", t1: oW["O7"], t2: oW["O8"], date: "11-7-2026", time: "21:00 hs", day: "SÁBADO" }
   };
   const cW = {};
   for (const [k, v] of Object.entries(c)) {
@@ -508,15 +557,15 @@ function runDynamicSimulation() {
   }
 
   const s = {
-    "S1": { label: "Semi 1", t1: cW["C1"], t2: cW["C2"], date: "14-7-2026" },
-    "S2": { label: "Semi 2", t1: cW["C3"], t2: cW["C4"], date: "15-7-2026" }
+    "S1": { label: "Semi 1", t1: cW["C1"], t2: cW["C2"], date: "14-7-2026", time: "15:00 hs", day: "MARTES" },
+    "S2": { label: "Semi 2", t1: cW["C3"], t2: cW["C4"], date: "15-7-2026", time: "15:00 hs", day: "MIÉRCOLES" }
   };
   const sW = {};
   for (const [k, v] of Object.entries(s)) {
     sW[k] = playMatch(v.t1, v.t2);
   }
 
-  const f = { label: "Final", t1: sW["S1"], t2: sW["S2"], date: "19-7-2026" };
+  const f = { label: "Final", t1: sW["S1"], t2: sW["S2"], date: "19-7-2026", time: "15:00 hs", day: "DOMINGO" };
   const champion = playMatch(f.t1, f.t2);
 
   return {
@@ -534,9 +583,6 @@ function runDynamicSimulation() {
 }
 
 function getGroupTeam(group, pos) {
-  if (pos === 3) {
-    return worldCupData.groups[group][2];
-  }
   return worldCupData.groups[group][pos - 1];
 }
 
@@ -610,7 +656,7 @@ function renderBracket() {
           </div>
           <span class="bracket-team-score">${!isT1Winner ? '✓' : ''}</span>
         </div>
-      `;
+  `;
       listDiv.appendChild(matchCard);
     });
 
