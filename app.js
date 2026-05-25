@@ -29,6 +29,7 @@ const elGroupsHeader = document.getElementById('groups-header');
 const elGroupsContent = document.getElementById('groups-content');
 const elGroupsGrid = document.getElementById('groups-grid-container');
 const elThirdsTbody = document.getElementById('thirds-tbody');
+const elFourthTbody = document.getElementById('fourth-tbody');
 
 // Initialize application on load
 window.addEventListener('DOMContentLoaded', () => {
@@ -173,6 +174,23 @@ function populateGroupsUI() {
   elGroupsGrid.innerHTML = '';
   const sortedGroupKeys = Object.keys(worldCupData.groups).sort();
 
+  // Calcular resumen de eliminados para claridad del usuario
+  let count4thPlaced = 0;
+  Object.values(worldCupData.groups).forEach(group => {
+    if (group.some(t => t.standing === 4)) count4thPlaced++;
+  });
+
+  const eliminated3rd = worldCupData.thirdPlaceRankings.filter(t => !t.qualified).length;
+  const totalEliminated = count4thPlaced + eliminated3rd;
+
+  const elSummaryText = document.getElementById('summary-elimination-text');
+  if (elSummaryText) {
+    elSummaryText.innerHTML = `
+      Según el reglamento, avanzan los dos mejores de cada grupo y los 8 mejores terceros. 
+      <br><span style="color: var(--accent-gold); font-weight: 600;">Resumen de eliminación:</span> Quedan fuera <strong>${totalEliminated} selecciones</strong> en total (${count4thPlaced} colistas de grupo + ${eliminated3rd} peores terceros).
+    `;
+  }
+
   sortedGroupKeys.forEach(groupLetter => {
     const groupCard = document.createElement('div');
     groupCard.className = 'group-card';
@@ -221,6 +239,31 @@ function populateGroupsUI() {
     `;
     elThirdsTbody.appendChild(tr);
   });
+
+  // 3. Fourth-placed eliminated teams table
+  if (elFourthTbody) {
+    elFourthTbody.innerHTML = '';
+    const fourthPlacedTeams = [];
+    Object.keys(worldCupData.groups).forEach(g => {
+      const team4 = worldCupData.groups[g].find(t => t.standing === 4);
+      if (team4) fourthPlacedTeams.push({ group: g, ...team4 });
+    });
+
+    fourthPlacedTeams.sort((a, b) => a.group.localeCompare(b.group)).forEach(item => {
+      const tr = document.createElement('tr');
+      if (selectedTeam === item.name) tr.style.background = 'rgba(239, 68, 68, 0.08)';
+      tr.innerHTML = `
+        <td style="font-weight: 600;">Grupo ${item.group}</td>
+        <td style="display: flex; align-items: center; gap: 8px;">
+          <span class="flag-placeholder" style="background: ${getTeamGradient(item.name)}">${item.name.substring(0, 2)}</span>
+          <span style="color: #fff; font-weight: 500;">${item.name}</span>
+        </td>
+        <td>#${item.rank}</td>
+        <td><span class="status-badge eliminated">Eliminado</span></td>
+      `;
+      elFourthTbody.appendChild(tr);
+    });
+  }
 }
 
 function isThirdQualified(teamName) {

@@ -162,9 +162,8 @@
         <i class="fa-solid fa-chevron-down arrow-icon"></i>
       </div>
       <div class="collapsible-content hidden" id="groups-content">
-        <p class="summary-disclaimer">
-          Las posiciones de los grupos se determinan por el Ranking FIFA. Los mejores 8 terceros puestos avanzan a
-          Dieciseisavos de Final.
+        <p class="summary-disclaimer" id="summary-elimination-text">
+          Cargando resumen de clasificación...
         </p>
         <div class="thirds-table-container">
           <h4>Tabla de Terceros Puestos (Clasificación Oficial)</h4>
@@ -185,6 +184,27 @@
             </table>
           </div>
         </div>
+
+        <!-- New Table for 4th placed teams -->
+        <div class="thirds-table-container" style="border-color: rgba(239, 68, 68, 0.3);">
+          <h4 style="color: var(--eliminated-color);">Equipos Eliminados Directamente (4tos Puestos)</h4>
+          <div class="table-scroll">
+            <table class="thirds-table">
+              <thead>
+                <tr>
+                  <th>Grupo</th>
+                  <th>Equipo</th>
+                  <th>Ranking FIFA</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody id="fourth-tbody">
+                <!-- Populated by JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
         <div class="groups-grid" id="groups-grid-container">
           <!-- Populated by JS -->
         </div>
