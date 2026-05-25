@@ -262,8 +262,17 @@ function populateGroupsUI() {
     const groupCard = document.createElement('div');
     groupCard.className = 'group-card';
 
-    let html = `<h5>Grupo ${groupLetter}</h5>`;
-    worldCupData.groups[groupLetter].forEach(team => {
+    const teamsInGroup = worldCupData.groups[groupLetter];
+    const category = getGroupCategory(groupLetter);
+
+    let html = `
+      <div class="group-header-flex">
+        <h5>Grupo ${groupLetter}</h5>
+        <span class="group-type-badge ${category.cssClass}">${category.label}</span>
+      </div>
+    `;
+
+    teamsInGroup.forEach(team => {
       const isQualified = team.standing <= 2 || isThirdQualified(team.name);
       const isSelected = selectedTeam === team.name;
 
@@ -431,6 +440,7 @@ function selectTeam(teamName) {
   applyGroupStageSimulation();
 
   const info = worldCupData.teams[teamName];
+  const category = getGroupCategory(info.group);
 
   // Find initial standing in group
   const groupTeams = worldCupData.groups[info.group];
@@ -444,6 +454,11 @@ function selectTeam(teamName) {
   elSelectedGroup.innerText = info.group;
   elSelectedStanding.innerText = standingStr;
   elSelectedRank.innerText = `#${info.rank}`;
+
+  const elCatBadge = document.getElementById('selected-team-group-category');
+  if (elCatBadge) {
+    elCatBadge.innerHTML = `<span class="group-type-badge ${category.cssClass}" style="margin-left: 8px; vertical-align: middle;">${category.label}</span>`;
+  }
 
   elDashboard.classList.remove('hidden');
 
@@ -511,6 +526,8 @@ function renderTimeline() {
   elTimelineSteps.innerHTML = '';
   const simulation = getDynamicPathFromSim(runDynamicSimulation());
   const hasQualified = simulation.path.length > 0;
+  const groupLetter = worldCupData.teams[selectedTeam].group;
+  const category = getGroupCategory(groupLetter);
 
   // 1. Group Stage Card
   const groupCard = document.createElement('div');
@@ -519,7 +536,7 @@ function renderTimeline() {
     <div class="timeline-marker"><i class="fa-solid fa-flag"></i></div>
     <div class="timeline-content">
       <div class="timeline-header">
-        <span class="timeline-round">Fase de Grupos</span>
+        <span class="timeline-round">Fase de Grupos • <span style="text-transform: none; opacity: 0.9;">${category.label}</span></span>
         <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 11 de Junio al 27 de Junio</span>
       </div>
       <p style="margin-bottom: 12px; color: var(--text-secondary);">
