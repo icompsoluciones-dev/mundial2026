@@ -29,17 +29,27 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet">
-  <!-- FontAwesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@600;800&display=swap"
+    rel="stylesheet" media="print" onload="this.media='all'">
+
+  <!-- Preload crítico para LCP -->
+  <link rel="preload" href="mundial2026-data.json" as="fetch" crossorigin="anonymous">
+
+  <!-- FontAwesome optimizado: carga asíncrona -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print"
+    onload="this.media='all'">
+
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- Google Analytics (GA4) - icompsoluciones-dev -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VUE2026VES"></script>
+  <!-- Google Analytics diferido para evitar Tareas Largas -->
   <script>
+    window.addEventListener('load', () => {
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = "https://www.googletagmanager.com/gtag/js?id=G-VUE2026VES";
+      document.head.appendChild(script);
+    });
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
@@ -101,7 +111,12 @@
     </section>
 
     <!-- App Content Wrapper (Hidden initially until a team is selected or shows default simulation) -->
-    <div id="dashboard-wrapper" class="hidden">
+    <div id="dashboard-wrapper" class="hidden-optimized">
+      <!-- Skeleton Loader for CLS prevention -->
+      <div class="skeleton-placeholder Card">
+        <div class="skeleton-line" style="width: 60%; height: 30px;"></div>
+        <div class="skeleton-line" style="width: 40%; height: 20px;"></div>
+      </div>
 
       <!-- Team Status Bar -->
       <section class="team-status-bar Card animate-slide-up" id="sec-team-status">

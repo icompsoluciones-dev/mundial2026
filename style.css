@@ -500,6 +500,13 @@ h6 {
 /* Helper to assign random colors for team flag placeholders dynamically in JS */
 
 /* ==========================================
+   Utility Classes
+   ========================================== */
+.hidden {
+  display: none !important;
+}
+
+/* ==========================================
    Dashboard Bar & View Switcher
    ========================================== */
 #dashboard-wrapper.hidden {

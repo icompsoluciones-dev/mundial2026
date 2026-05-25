@@ -3,6 +3,7 @@ let worldCupData = null;
 let selectedTeam = null;
 let currentView = 'timeline'; // 'timeline' or 'bracket'
 let simulationMode = 'favorites';
+let activeSuggestionIdx = -1;
 
 // Cache for team gradients to avoid redundant calculations
 const gradientCache = new Map();
@@ -45,26 +46,46 @@ init();
 // Fetch pre-calculated data JSON
 async function fetchData() {
   try {
+    // Intenta cargar desde localStorage para velocidad instantánea
+    const cachedData = localStorage.getItem('wc_data_cache');
+    if (cachedData) {
+      worldCupData = JSON.parse(cachedData);
+      renderInitialUI();
+    }
+
     const response = await fetch('mundial2026-data.json');
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
-    worldCupData = await response.json();
+    const freshData = await response.json();
 
-    // Populate static widgets
-    populatePopularTags();
-    populateGroupsUI();
-
-    // Select default team on load (or show nothing, let's load FRANCIA as default highlight to show off)
-    selectTeam("FRANCIA");
+    // Si los datos cambiaron, actualiza y guarda en caché
+    if (JSON.stringify(freshData) !== cachedData) {
+      worldCupData = freshData;
+      localStorage.setItem('wc_data_cache', JSON.stringify(freshData));
+      renderInitialUI();
+    }
   } catch (error) {
-    console.error("Failed to fetch world cup data:", error);
-    // Display error message to user
-    document.querySelector('.main-content').innerHTML = `
+    handleFetchError(error);
+  }
+}
+
+function renderInitialUI() {
+  if (!worldCupData) return;
+  populatePopularTags();
+  populateGroupsUI();
+  if (!selectedTeam) selectTeam("FRANCIA");
+}
+
+function handleFetchError(error) {
+  console.error("Failed to fetch world cup data:", error);
+  const mainContent = document.querySelector('.main-content');
+  if (mainContent) {
+    mainContent.innerHTML = `
       <div class="Card" style="text-align: center; border-color: #ef4444;">
         <i class="fa-solid fa-triangle-exclamation" style="font-size: 3rem; color: #ef4444; margin-bottom: 15px;"></i>
         <h2 style="color: #fff; margin-bottom: 10px;">Error al cargar datos</h2>
-        <p style="color: #9ca3af;">No se pudo cargar el archivo mundial2026-data.json. Por favor, asegúrate de que el servidor local está activo.</p>
+        <p style="color: #9ca3af;">No se pudo cargar la información del Mundial. Por favor, asegúrate de que el archivo JSON esté disponible y el servidor activo.</p>
       </div>
     `;
   }
@@ -430,7 +451,6 @@ function handleSearchInput() {
 }
 
 // Handle suggestion keys
-let activeSuggestionIdx = -1;
 function handleSearchKeys(e) {
   const items = elSuggestions.querySelectorAll('.suggestion-item');
   if (items.length === 0) return;
@@ -497,7 +517,10 @@ function selectTeam(teamName) {
     elCatBadge.innerHTML = `<span class="group-type-badge ${category.cssClass}" style="margin-left: 8px; vertical-align: middle;">${category.label}</span>`;
   }
 
-  elDashboard.classList.remove('hidden');
+  // Mostramos el dashboard y ocultamos el skeleton
+  elDashboard.classList.remove('hidden-optimized');
+  const skeleton = elDashboard.querySelector('.skeleton-placeholder');
+  if (skeleton) skeleton.style.display = 'none';
 
   // Refresh UI panels
   renderTimeline();
