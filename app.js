@@ -148,6 +148,33 @@ function getTeamGradient(teamName) {
   return `linear-gradient(135deg, hsl(${h1}, 75%, 42%) 0%, hsl(${h2}, 85%, 26%) 100%)`;
 }
 
+// Helper to calculate group category based on FIFA rankings
+function getGroupCategory(groupLetter) {
+  const teamsInGroup = worldCupData.groups[groupLetter];
+  const sumRank = teamsInGroup.reduce((acc, t) => acc + t.rank, 0);
+  const ranks = teamsInGroup.map(t => t.rank);
+  const rangeRank = Math.max(...ranks) - Math.min(...ranks);
+
+  let label = "Equilibrado";
+  let cssClass = "type-standard";
+
+  if (sumRank < 110) {
+    label = "De la Muerte";
+    cssClass = "type-death";
+  } else if (rangeRank < 30) {
+    label = "Competente";
+    cssClass = "type-competent";
+  } else if (sumRank < 145) {
+    label = "Fuerte";
+    cssClass = "type-strong";
+  } else if (sumRank > 165) {
+    label = "Débil";
+    cssClass = "type-weak";
+  }
+
+  return { label, cssClass };
+}
+
 // Populate popular tags UI
 function populatePopularTags() {
   elPopularTags.innerHTML = '';
