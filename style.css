@@ -1206,6 +1206,26 @@ h6 {
     width: 100%;
     align-items: center;
   }
+
+  .match-box {
+    flex-direction: column;
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .match-team {
+    justify-content: center !important;
+    text-align: center !important;
+    width: 100%;
+  }
+
+  .match-team.opponent-team {
+    flex-direction: row-reverse;
+  }
+
+  .match-vs {
+    padding: 5px 0;
+  }
 }
 
 
