@@ -265,7 +265,6 @@ function populateGroupsUI() {
     });
   }
 }
-
 function isThirdQualified(teamName) {
   const found = worldCupData.thirdPlaceRankings.find(item => item.team.name === teamName);
   return found ? found.qualified : false;
@@ -356,7 +355,7 @@ function highlightSuggestion(items) {
 
 // Select team and refresh views
 function selectTeam(teamName) {
-  if (!worldCupData.teams[teamName]) return;
+  if (!worldCupData || !worldCupData.teams[teamName]) return;
 
   selectedTeam = teamName;
   activeSuggestionIdx = -1;
@@ -441,6 +440,7 @@ function getDynamicPathFromSim(sim) {
 function renderTimeline() {
   elTimelineSteps.innerHTML = '';
   const simulation = getDynamicPathFromSim(runDynamicSimulation());
+  const hasQualified = simulation.path.length > 0;
 
   // 1. Group Stage Card
   const groupCard = document.createElement('div');
@@ -453,7 +453,7 @@ function renderTimeline() {
         <span class="timeline-date"><i class="fa-regular fa-calendar"></i> 11 de Junio al 27 de Junio</span>
       </div>
       <p style="margin-bottom: 12px; color: var(--text-secondary);">
-        Tu selección formó parte del <strong>Grupo ${worldCupData.teams[selectedTeam].group}</strong>. Finalizó en la posición <strong>${elSelectedStanding.innerText}</strong> y avanzó a la fase de eliminación directa.
+        Tu selección formó parte del <strong>Grupo ${worldCupData.teams[selectedTeam].group}</strong>. Finalizó en la posición <strong>${elSelectedStanding.innerText}</strong> ${hasQualified ? 'y avanzó a la fase de eliminación directa' : 'y lamentablemente quedó eliminada en esta fase'}.
       </p>
       <div class="match-box" style="background: rgba(0,0,0,0.15)">
         <div style="display:flex; flex-direction:column; gap:6px; width:100%;">
@@ -471,6 +471,8 @@ function renderTimeline() {
     </div>
   `;
   elTimelineSteps.appendChild(groupCard);
+
+  if (!hasQualified) return;
 
   // 2. Knockout Cards
   const icons = {
