@@ -4,6 +4,9 @@ let selectedTeam = null;
 let currentView = 'timeline'; // 'timeline' or 'bracket'
 let simulationMode = 'favorites';
 
+// Cache for team gradients to avoid redundant calculations
+const gradientCache = new Map();
+
 // Popular teams for quick tags
 const POPULAR_TEAMS = ["FRANCIA", "ARGENTINA", "BRASIL", "ESPAÑA", "ALEMANIA", "INGLATERRA", "PORTUGAL", "PAÍSES BAJOS", "BÉLGICA"];
 
@@ -31,12 +34,13 @@ const elGroupsGrid = document.getElementById('groups-grid-container');
 const elThirdsTbody = document.getElementById('thirds-tbody');
 const elFourthTbody = document.getElementById('fourth-tbody');
 
-// Initialize application on load
-window.addEventListener('DOMContentLoaded', () => {
+// Initialize application immediately (relying on 'defer' in script tag)
+function init() {
   fetchData();
   setupEventListeners();
   setupAnalyticsTracking();
-});
+}
+init();
 
 // Fetch pre-calculated data JSON
 async function fetchData() {
@@ -139,13 +143,17 @@ function setupAnalyticsTracking() {
 
 // Generate unique deterministic color gradients for team placeholders
 function getTeamGradient(teamName) {
+  if (gradientCache.has(teamName)) return gradientCache.get(teamName);
+
   let hash = 0;
   for (let i = 0; i < teamName.length; i++) {
     hash = teamName.charCodeAt(i) + ((hash << 5) - hash);
   }
   const h1 = Math.abs(hash % 360);
   const h2 = (h1 + 60) % 360;
-  return `linear-gradient(135deg, hsl(${h1}, 75%, 42%) 0%, hsl(${h2}, 85%, 26%) 100%)`;
+  const gradient = `linear-gradient(135deg, hsl(${h1}, 75%, 42%) 0%, hsl(${h2}, 85%, 26%) 100%)`;
+  gradientCache.set(teamName, gradient);
+  return gradient;
 }
 
 // Helper to calculate group category based on FIFA rankings
@@ -177,7 +185,7 @@ function getGroupCategory(groupLetter) {
 
 // Populate popular tags UI
 function populatePopularTags() {
-  elPopularTags.innerHTML = '';
+  const fragment = document.createDocumentFragment();
   POPULAR_TEAMS.forEach(team => {
     if (worldCupData.teams[team]) {
       const tag = document.createElement('div');
@@ -190,9 +198,11 @@ function populatePopularTags() {
         elSearch.value = team;
         selectTeam(team);
       });
-      elPopularTags.appendChild(tag);
+      fragment.appendChild(tag);
     }
   });
+  elPopularTags.innerHTML = '';
+  elPopularTags.appendChild(fragment);
 }
 
 // Dynamic group stage simulation based on criteria and plot armor
@@ -265,7 +275,7 @@ function applyGroupStageSimulation() {
 // Populate collapsible group standings and thirds table
 function populateGroupsUI() {
   // 1. Group cards
-  elGroupsGrid.innerHTML = '';
+  const gridFragment = document.createDocumentFragment();
   const sortedGroupKeys = Object.keys(worldCupData.groups).sort();
 
   // Calcular resumen de eliminados para claridad del usuario
