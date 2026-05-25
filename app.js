@@ -5,7 +5,7 @@ let currentView = 'timeline'; // 'timeline' or 'bracket'
 let simulationMode = 'favorites';
 
 // Popular teams for quick tags
-const POPULAR_TEAMS = ["COREA", "ESPAÑA", "ARGENTINA", "MÉXICO", "BRASIL", "FRANCIA", "ALEMANIA", "INGLATERRA", "PORTUGAL"];
+const POPULAR_TEAMS = ["FRANCIA", "ARGENTINA", "BRASIL", "ESPAÑA", "ALEMANIA", "INGLATERRA", "PORTUGAL", "PAÍSES BAJOS", "BÉLGICA"];
 
 // DOM elements cache
 const elSearch = document.getElementById('team-search');
@@ -166,6 +166,73 @@ function populatePopularTags() {
       elPopularTags.appendChild(tag);
     }
   });
+}
+
+// Dynamic group stage simulation based on criteria and plot armor
+function applyGroupStageSimulation() {
+  if (!worldCupData) return;
+
+  // 1. Sort teams in each group based on simulation mode
+  Object.keys(worldCupData.groups).forEach(groupLetter => {
+    let teams = [...worldCupData.groups[groupLetter]];
+
+    if (simulationMode === 'favorites') {
+      teams.sort((a, b) => a.rank - b.rank);
+    } else if (simulationMode === 'underdogs') {
+      // Ordenamos por favoritos (1ro a 4to por ranking)
+      teams.sort((a, b) => a.rank - b.rank);
+      // Aplicamos la "Sorpresa" intercambiando el 3ero y 4to puesto
+      [teams[2], teams[3]] = [teams[3], teams[2]];
+    } else if (simulationMode === 'random') {
+      // Para evitar resultados absurdos (como España/Portugal eliminados siendo 4tos),
+      // ordenamos por ranking y barajamos solo los 3 primeros puestos.
+      // El 4to equipo (el más débil) permanece al fondo.
+      teams.sort((a, b) => a.rank - b.rank);
+      const top3 = teams.slice(0, 3).sort(() => Math.random() - 0.5);
+      teams = [...top3, teams[3]];
+    } else if (simulationMode === 'realistic') {
+      // Agregamos un factor de "suerte" de +/- 10 puntos al ranking.
+      // Esto permite que equipos cercanos en nivel roten posiciones.
+      teams.sort((a, b) => (a.rank + (Math.random() * 20 - 10)) - (b.rank + (Math.random() * 20 - 10)));
+    }
+
+    // Plot Armor: Ensure selected team always qualifies (Top 2 for bracket logic)
+    if (selectedTeam) {
+      const sIdx = teams.findIndex(t => t.name === selectedTeam);
+      if (sIdx > 1) {
+        const [team] = teams.splice(sIdx, 1);
+        teams.splice(1, 0, team); // Move to 2nd place
+      }
+    }
+
+    // Update simulated standings
+    teams.forEach((t, i) => t.standing = i + 1);
+    worldCupData.groups[groupLetter] = teams;
+  });
+
+  // 2. Recalculate Third Place Rankings for the summary UI
+  const allThirds = [];
+  Object.keys(worldCupData.groups).forEach(g => {
+    allThirds.push({ group: g, team: worldCupData.groups[g][2] });
+  });
+
+  if (simulationMode === 'favorites') {
+    allThirds.sort((a, b) => a.team.rank - b.team.rank);
+  } else if (simulationMode === 'underdogs') {
+    allThirds.sort((a, b) => b.team.rank - a.team.rank);
+  } else if (simulationMode === 'realistic') {
+    // En modo realista, una vez definidos los 3eros, clasifican los de mejor ranking puro
+    allThirds.sort((a, b) => a.team.rank - b.team.rank);
+  } else {
+    allThirds.sort(() => Math.random() - 0.5);
+  }
+
+  allThirds.forEach((item, i) => {
+    item.overallOrder = i + 1;
+    item.qualified = i < 8;
+  });
+
+  worldCupData.thirdPlaceRankings = allThirds;
 }
 
 // Populate collapsible group standings and thirds table
@@ -359,6 +426,9 @@ function selectTeam(teamName) {
 
   selectedTeam = teamName;
   activeSuggestionIdx = -1;
+
+  // Recalculate group standings based on simulation criteria
+  applyGroupStageSimulation();
 
   const info = worldCupData.teams[teamName];
 
@@ -565,7 +635,7 @@ function runDynamicSimulation() {
     return false;
   };
 
-  const playMatch = (t1, t2) => {
+  const playMatch = (t1, t2, forceFavorites = false) => {
     const isT1Selected = carriesSelected(t1);
     const isT2Selected = carriesSelected(t2);
     let winner;
@@ -575,14 +645,19 @@ function runDynamicSimulation() {
       winner = t1;
     } else if (isT2Selected) {
       winner = t2;
-    } else {
-      if (simulationMode === 'favorites') {
-        winner = t1.rank < t2.rank ? t1 : t2;
-      } else if (simulationMode === 'underdogs') {
-        winner = t1.rank > t2.rank ? t1 : t2;
-      } else { // Random mode
-        winner = Math.random() > 0.5 ? t1 : t2;
-      }
+    } else if (forceFavorites || simulationMode === 'favorites') {
+      winner = t1.rank < t2.rank ? t1 : t2;
+    } else if (simulationMode === 'underdogs') {
+      // Le damos una ventaja al underdog (70%) pero no es absoluta para evitar resultados absurdos
+      const underdog = t1.rank > t2.rank ? t1 : t2;
+      const favorite = t1.rank < t2.rank ? t1 : t2;
+      winner = Math.random() < 0.7 ? underdog : favorite;
+    } else if (simulationMode === 'realistic') {
+      // P(t1 wins) = t2.rank / (t1.rank + t2.rank)
+      const probT1Wins = t2.rank / (t1.rank + t2.rank);
+      winner = Math.random() < probT1Wins ? t1 : t2;
+    } else { // Random mode
+      winner = Math.random() > 0.5 ? t1 : t2;
     }
 
     return {
@@ -623,7 +698,7 @@ function runDynamicSimulation() {
   };
   const cW = {};
   for (const [k, v] of Object.entries(c)) {
-    cW[k] = playMatch(v.t1, v.t2);
+    cW[k] = playMatch(v.t1, v.t2, true); // Cuartos en adelante usa Ranking
   }
 
   const s = {
@@ -632,11 +707,11 @@ function runDynamicSimulation() {
   };
   const sW = {};
   for (const [k, v] of Object.entries(s)) {
-    sW[k] = playMatch(v.t1, v.t2);
+    sW[k] = playMatch(v.t1, v.t2, true); // Semis usa Ranking
   }
 
   const f = { label: "Final", t1: sW["S1"], t2: sW["S2"], date: "19-7-2026", time: "15:00 hs", day: "DOMINGO" };
-  const champion = playMatch(f.t1, f.t2);
+  const champion = playMatch(f.t1, f.t2, true); // Final usa Ranking
 
   return {
     "R32": r32,
